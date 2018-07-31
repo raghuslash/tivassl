@@ -1,0 +1,30 @@
+
+**** Build of configuration Debug for project SSL_Controller_V2.0 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/admin/workspace_v8/SSL_Controller_V2.0" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 143: warning #225-D: function "atoi" declared implicitly
+"../main.c", line 145: warning #225-D: function "LED_brightness" declared implicitly
+"../main.c", line 187: warning #225-D: function "strlen" declared implicitly
+"../main.c", line 190: warning #225-D: function "strcpy" declared implicitly
+"../main.c", line 228: warning #225-D: function "get_adc_data" declared implicitly
+"../main.c", line 248: warning #225-D: function "UARTprintf" declared implicitly
+"../main.c", line 303: warning #225-D: function "UARTStdioConfig" declared implicitly
+"../main.c", line 344: warning #225-D: function "UARTStdioConfig" declared implicitly
+"../main.c", line 565: warning #225-D: function "IntMasterEnable" declared implicitly
+"../main.c", line 572: warning #161-D: declaration is incompatible with previous "get_adc_data" (declared at line 228)
+"../main.c", line 606: warning #161-D: declaration is incompatible with previous "LED_brightness" (declared at line 145)
+"../main.c", line 891: warning #225-D: function "IntMasterEnable" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "SSL_Controller_V2.0.out"
+Invoking: ARM Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"SSL_Controller_V2.0.map" --heap_size=0 --stack_size=512 -i"F:/Academics/IISc Research work/Online IV Tracer/WIP/MSP432/TivaWare_C_Series-2.1.3.156/driverlib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/include" --priority --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SSL_Controller_V2.0_linkInfo.xml" --rom_model -o "SSL_Controller_V2.0.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./Peripherals/adc.obj" "./Peripherals/cpu.obj" "./Peripherals/gpio.obj" "./Peripherals/i2c.obj" "./Peripherals/interrupt.obj" "./Peripherals/pwm.obj" "./Peripherals/sysctl.obj" "./Peripherals/timer.obj" "./Peripherals/uart.obj" "./Peripherals/uartstdio.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "SSL_Controller_V2.0.out"
+ 
+
+**** Build Finished ****
