@@ -65,7 +65,7 @@ while (1):
     print("Current: "+str(round(current,2))+"A. ADC value: "+str(current_adc)+".")
     print("LDR ADC value: "+str(ldr)+".")
     print("Chip Temperature: "+str(round(chip_temp,2))+"°C. ADC value: "+str(chip_temp_adc)+".")
-    time.sleep(1)
+    time.sleep(3)
     if msvcrt.kbhit():
         print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         br=input("Enter Brightness Value: ")
