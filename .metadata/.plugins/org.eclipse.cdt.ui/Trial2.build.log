@@ -18,6 +18,7 @@ Invoking: ARM Compiler
 "../main.c", line 572: warning #161-D: declaration is incompatible with previous "get_adc_data" (declared at line 228)
 "../main.c", line 606: warning #161-D: declaration is incompatible with previous "LED_brightness" (declared at line 145)
 "../main.c", line 891: warning #225-D: function "IntMasterEnable" declared implicitly
+"../main.c", line 913: warning #225-D: function "UARTprintf" declared implicitly
 Finished building: "../main.c"
  
 Building target: "Trial2.out"

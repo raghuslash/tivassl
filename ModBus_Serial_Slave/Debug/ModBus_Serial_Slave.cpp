@@ -51,12 +51,21 @@ unsigned long inc_time = 0;
 #define CHIP_TEMP_H 3000
 
 
+byte ioconf1[2]={0x00,0x00};  
+byte ioconf2[2]={0x01,0x00};
+
+
+
+byte data1[11][2]={{0x14,0xF0},{0x14,0xF0},{0x14,0xF0},{0x14,0x70},{0x14,0x70},{0x14,0x70},{0x14,0x70},{0x14,0x80},{0x14,0x00},{0x14,0x00},{0x14,0x00}};
+byte data2[11][2]={{0x15,0xF9},{0x15,0xF1},{0x15,0xC9},{0x15,0xB8,},{0x15,0xB0},{0x15,0x88},{0x15,0x80},{0x15,0x41},{0x15,0x30},{0x15,0x08},{0x15,0x00}};
+
+
 void setup() {
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, HIGH);
 
   
-  modbus.config(&Serial, BAUD, TXPIN); 
+  modbus.config(&Serial1, BAUD, TXPIN); 
 
   
   modbus.setSlaveId(ID);
@@ -94,65 +103,56 @@ void setup() {
       modbus.addHreg(i, '\0');
   Wire.setModule(1);
   Wire.begin();
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(ioconf1, 2);
+  Wire.endTransmission();
 
 
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(ioconf2, 2);
+  Wire.endTransmission();
+
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(data1[5], 2);
+  Wire.endTransmission();
+
+
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(data2[5], 2);
+  Wire.endTransmission();
+
+  modbus.Hreg(BRIGHTNESS_H, 50);
 }
 
 
 int oldb=0;
+
+
 void loop() {
   
-    byte ioconf1[2]={0x00,0x00};
-    byte ioconf2[2]={0x01,0x00};
-
-    byte data1[2]={0x14,0x00};
-    byte data2[2]={0x15,0x00};
-
-
-    while(1){
-          
-          
-
-
-          Wire.beginTransmission(LAMP_I2C_ADDR);
-          Wire.write(ioconf1, 2);
-          Wire.endTransmission();
-
-
-          Wire.beginTransmission(LAMP_I2C_ADDR);
-          Wire.write(ioconf2, 2);
-          Wire.endTransmission();
-
-
-          Wire.beginTransmission(LAMP_I2C_ADDR);
-          Wire.write(data1, 2);
-          Wire.endTransmission();
-
-
-          Wire.beginTransmission(LAMP_I2C_ADDR);
-          Wire.write(data2, 2);
-          Wire.endTransmission();
-
-          delay(1000);
-    }
-
-
 
 
   if(modbus.task())
   {
       
-      int b=modbus.Hreg(BRIGHTNESS_H);
-      b=(b/10)*10;
-      if(oldb!=b){
-      oldb=b;
+      
+        int b=modbus.Hreg(BRIGHTNESS_H);
+        b=(b/10);
+        if (b>10) b=10;
+        if(b<0) b=0;
+        if(oldb!=b){
+
+        oldb=b;
+
+        Wire.beginTransmission(LAMP_I2C_ADDR);
+        Wire.write(data1[b], 2);
+        Wire.endTransmission();
 
 
-
-      }
-
-
-
+        Wire.beginTransmission(LAMP_I2C_ADDR);
+        Wire.write(data2[b], 2);
+        Wire.endTransmission();
+        }
 
 
       
@@ -162,6 +162,7 @@ void loop() {
 
       i++;
       }
+
 
   }
 
@@ -175,6 +176,7 @@ void loop() {
       modbus.Ireg(VOLTAGE_IP, analogRead(VOLTAGE_PIN));
       modbus.Ireg(CURRENT_IP, analogRead(CURRENT_PIN));
       modbus.Hreg(CHIP_TEMP_H, analogRead(TEMPSENSOR));
+
 
   }
 }

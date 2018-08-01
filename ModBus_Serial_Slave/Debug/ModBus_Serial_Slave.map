@@ -11,7 +11,9 @@ C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GX
 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
                               C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o) (GPIOAIntHandler)
 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
-                              ./ModBus_Serial_Slave.o (delay)
+                              ./ModBus_Serial_Slave.o (millis)
+C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+                              ./ModBus_Serial_Slave.o (analogRead)
 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
                               ./ModBus_Serial_Slave.o (pinMode)
 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
@@ -72,9 +74,6 @@ Discarded input sections
  .data          0x00000000        0x0 ./ModBus_Serial_Slave.o
  .bss           0x00000000        0x0 ./ModBus_Serial_Slave.o
  .bss.inc_time  0x00000000        0x4 ./ModBus_Serial_Slave.o
- .bss.oldb      0x00000000        0x4 ./ModBus_Serial_Slave.o
- .bss.update_time
-                0x00000000        0x4 ./ModBus_Serial_Slave.o
  .group         0x00000000        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .text          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .data          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
@@ -106,69 +105,15 @@ Discarded input sections
  .bss           0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
  .text._ZN12ModbusSerial10getSlaveIdEv
                 0x00000000        0x6 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .text._ZN12ModbusSerial4sendEPh
-                0x00000000       0x50 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .text._ZN12ModbusSerial7calcCrcEhPhh
-                0x00000000       0x34 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .text._ZN12ModbusSerial7receiveEPh
-                0x00000000       0x52 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .text._ZN12ModbusSerial7sendPDUEPh
-                0x00000000       0x8a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .text._ZN12ModbusSerial4taskEv
-                0x00000000       0x84 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .rodata._ZL10_auchCRCHi
-                0x00000000      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .rodata._ZL10_auchCRCLo
-                0x00000000      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
  .text          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .data          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .bss           0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus14searchRegisterEj
-                0x00000000       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus3RegEjj
-                0x00000000        0xe C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus3RegEj
-                0x00000000        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4HregEjj
-                0x00000000        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4HregEj
-                0x00000000        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .text._ZN6Modbus7addCoilEjb
                 0x00000000       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .text._ZN6Modbus7addIstsEjb
                 0x00000000       0x14 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4CoilEjb
-                0x00000000       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .text._ZN6Modbus4IstsEjb
                 0x00000000       0x14 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4IregEjj
-                0x00000000        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4CoilEj
-                0x00000000       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4IstsEj
-                0x00000000       0x16 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus4IregEj
-                0x00000000        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus17exceptionResponseEhh
-                0x00000000       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus13readRegistersEjj
-                0x00000000       0x7c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus19writeSingleRegisterEjj
-                0x00000000       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus22writeMultipleRegistersEPhjjh
-                0x00000000       0x9c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus9readCoilsEjj
-                0x00000000       0xa8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus15readInputStatusEjj
-                0x00000000       0xac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus18readInputRegistersEjj
-                0x00000000       0x7e C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus15writeSingleCoilEjj
-                0x00000000       0x4a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus18writeMultipleCoilsEPhjjh
-                0x00000000       0xae C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .text._ZN6Modbus10receivePDUEPh
-                0x00000000       0x9c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
  .text          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .data          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .bss           0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
@@ -214,7 +159,6 @@ Discarded input sections
  .text.CPUwfi_safe
                 0x00000000        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .text.micros   0x00000000       0x2c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .text.millis   0x00000000        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .text.sleep    0x00000000       0xcc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .text.sleepSeconds
                 0x00000000       0xd4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
@@ -223,13 +167,28 @@ Discarded input sections
                 0x00000000       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .bss.stay_asleep
                 0x00000000        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .text          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .data          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .bss           0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.getTimerBase
+                0x00000000       0x26 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.getTimerInterrupt
+                0x00000000       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.enableTimerPeriph
+                0x00000000       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.analogReference
+                0x00000000        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.PWMWrite
+                0x00000000      0x140 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.analogWrite
+                0x00000000        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .text.analogReadResolution
+                0x00000000        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
  .text          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .data          0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .bss           0x00000000        0x0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .text.digitalRead
                 0x00000000       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .rodata.digital_pin_to_analog_in
-                0x00000000       0xa4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .rodata.digital_pin_to_timer
                 0x00000000       0x29 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .rodata.timer_to_ab
@@ -847,569 +806,671 @@ Linker script and memory map
 LOAD ./ModBus_Serial_Slave.o
 START GROUP
 
-.text           0x00000000     0x251c
+.text           0x00000000     0x30d4
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _text = .
  *(.isr_vector)
  .isr_vector    0x00000000      0x26c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
                 0x00000000                g_pfnVectors
  *(.text .text* .gnu.linkonce.t.*)
- .text.setup    0x0000026c       0xa8 ./ModBus_Serial_Slave.o
-                0x0000026c                setup
  .text.startup._GLOBAL__sub_I_modbus
-                0x00000314        0xc ./ModBus_Serial_Slave.o
- .text.loop     0x00000320       0x9c ./ModBus_Serial_Slave.o
-                0x00000320                loop
+                0x0000026c        0xc ./ModBus_Serial_Slave.o
+ .text.setup    0x00000278      0x120 ./ModBus_Serial_Slave.o
+                0x00000278                setup
+ .text.loop     0x00000398      0x108 ./ModBus_Serial_Slave.o
+                0x00000398                loop
  .text._ZN5Print17availableForWriteEv
-                0x000003bc        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x000003bc                Print::availableForWrite()
+                0x000004a0        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000004a0                Print::availableForWrite()
  .text._ZN7TwoWire5writeEPKhj
-                0x000003c0       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x000003c0                TwoWire::write(unsigned char const*, unsigned int)
+                0x000004a4       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000004a4                TwoWire::write(unsigned char const*, unsigned int)
  .text._ZN7TwoWire9availableEv
-                0x000003e0       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x000003e0                TwoWire::available()
+                0x000004c4       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000004c4                TwoWire::available()
  .text._ZN7TwoWire4readEv
-                0x00000400       0x3c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000400                TwoWire::read()
+                0x000004e4       0x3c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000004e4                TwoWire::read()
  .text._ZN7TwoWire4peekEv
-                0x0000043c       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x0000043c                TwoWire::peek()
+                0x00000520       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000520                TwoWire::peek()
  .text._ZN7TwoWire5flushEv
-                0x00000460       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000460                TwoWire::flush()
+                0x00000544       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000544                TwoWire::flush()
  .text._ZN7TwoWire5writeEh
-                0x0000047c       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x0000047c                TwoWire::write(unsigned char)
+                0x00000560       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000560                TwoWire::write(unsigned char)
  .text._Z8getErrorh
-                0x000004fc       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x000004fc                getError(unsigned char)
+                0x000005e0       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000005e0                getError(unsigned char)
  .text._ZN7TwoWire10sendTxDataEmh
-                0x00000514       0x7c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000514                TwoWire::sendTxData(unsigned long, unsigned char)
+                0x000005f8       0x7c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x000005f8                TwoWire::sendTxData(unsigned long, unsigned char)
  .text._ZN7TwoWire9forceStopEv
-                0x00000590       0xe4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000590                TwoWire::forceStop()
+                0x00000674       0xe4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000674                TwoWire::forceStop()
  .text._ZN7TwoWire5beginEv
-                0x00000674      0x1ac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000674                TwoWire::begin()
+                0x00000758      0x1ac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000758                TwoWire::begin()
  .text._ZN7TwoWire5beginEh
-                0x00000820       0xfc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000820                TwoWire::begin(unsigned char)
+                0x00000904       0xfc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000904                TwoWire::begin(unsigned char)
  .text._ZN7TwoWire17beginTransmissionEi
-                0x0000091c       0x14 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x0000091c                TwoWire::beginTransmission(int)
+                0x00000a00       0x14 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000a00                TwoWire::beginTransmission(int)
  .text._ZN7TwoWire15endTransmissionEh
-                0x00000930      0x130 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000930                TwoWire::endTransmission(unsigned char)
+                0x00000a14      0x130 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000a14                TwoWire::endTransmission(unsigned char)
  .text._ZN7TwoWire15endTransmissionEv
-                0x00000a60        0x6 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000a60                TwoWire::endTransmission()
- *fill*         0x00000a66        0x2 
+                0x00000b44        0x6 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000b44                TwoWire::endTransmission()
+ *fill*         0x00000b4a        0x2 
  .text._ZN7TwoWire13I2CIntHandlerEv
-                0x00000a68      0x158 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000a68                TwoWire::I2CIntHandler()
+                0x00000b4c      0x158 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000b4c                TwoWire::I2CIntHandler()
  .text.I2CIntHandler
-                0x00000bc0        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000bc0                I2CIntHandler
+                0x00000ca4        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000ca4                I2CIntHandler
  .text._ZN7TwoWire9setModuleEm
-                0x00000bcc       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00000bcc                TwoWire::setModule(unsigned long)
+                0x00000cb0       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000cb0                TwoWire::setModule(unsigned long)
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00000be8       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00000ccc       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .text._ZN12ModbusSerialC2Ev
-                0x00000c04        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
-                0x00000c04                ModbusSerial::ModbusSerial()
-                0x00000c04                ModbusSerial::ModbusSerial()
+                0x00000ce8        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000ce8                ModbusSerial::ModbusSerial()
+                0x00000ce8                ModbusSerial::ModbusSerial()
  .text._ZN12ModbusSerial10setSlaveIdEh
-                0x00000c10        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
-                0x00000c10                ModbusSerial::setSlaveId(unsigned char)
+                0x00000cf4        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000cf4                ModbusSerial::setSlaveId(unsigned char)
  .text._ZN12ModbusSerial6configEP14HardwareSerialli
-                0x00000c18       0x5c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
-                0x00000c18                ModbusSerial::config(HardwareSerial*, long, int)
+                0x00000cfc       0x5c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000cfc                ModbusSerial::config(HardwareSerial*, long, int)
+ .text._ZN12ModbusSerial4sendEPh
+                0x00000d58       0x50 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000d58                ModbusSerial::send(unsigned char*)
+ .text._ZN12ModbusSerial7calcCrcEhPhh
+                0x00000da8       0x34 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000da8                ModbusSerial::calcCrc(unsigned char, unsigned char*, unsigned char)
+ .text._ZN12ModbusSerial7receiveEPh
+                0x00000ddc       0x52 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000ddc                ModbusSerial::receive(unsigned char*)
+ .text._ZN12ModbusSerial7sendPDUEPh
+                0x00000e2e       0x8a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000e2e                ModbusSerial::sendPDU(unsigned char*)
+ .text._ZN12ModbusSerial4taskEv
+                0x00000eb8       0x84 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+                0x00000eb8                ModbusSerial::task()
  .text._ZN6ModbusC2Ev
-                0x00000c74        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
-                0x00000c74                Modbus::Modbus()
-                0x00000c74                Modbus::Modbus()
+                0x00000f3c        0x8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f3c                Modbus::Modbus()
+                0x00000f3c                Modbus::Modbus()
+ .text._ZN6Modbus14searchRegisterEj
+                0x00000f44       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f44                Modbus::searchRegister(unsigned int)
  .text._ZN6Modbus6addRegEjj
-                0x00000c7c       0x26 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
-                0x00000c7c                Modbus::addReg(unsigned int, unsigned int)
+                0x00000f54       0x26 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f54                Modbus::addReg(unsigned int, unsigned int)
+ .text._ZN6Modbus3RegEjj
+                0x00000f7a        0xe C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f7a                Modbus::Reg(unsigned int, unsigned int)
+ .text._ZN6Modbus3RegEj
+                0x00000f88        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f88                Modbus::Reg(unsigned int)
  .text._ZN6Modbus7addHregEjj
-                0x00000ca2        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
-                0x00000ca2                Modbus::addHreg(unsigned int, unsigned int)
+                0x00000f94        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f94                Modbus::addHreg(unsigned int, unsigned int)
+ .text._ZN6Modbus4HregEjj
+                0x00000f9e        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000f9e                Modbus::Hreg(unsigned int, unsigned int)
+ .text._ZN6Modbus4HregEj
+                0x00000fa8        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fa8                Modbus::Hreg(unsigned int)
  .text._ZN6Modbus7addIregEjj
-                0x00000cac        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
-                0x00000cac                Modbus::addIreg(unsigned int, unsigned int)
- .text.NmiSR    0x00000cb6        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x00000fb2        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fb2                Modbus::addIreg(unsigned int, unsigned int)
+ .text._ZN6Modbus4CoilEjb
+                0x00000fbc       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fbc                Modbus::Coil(unsigned int, bool)
+ .text._ZN6Modbus4IregEjj
+                0x00000fcc        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fcc                Modbus::Ireg(unsigned int, unsigned int)
+ .text._ZN6Modbus4CoilEj
+                0x00000fd6       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fd6                Modbus::Coil(unsigned int)
+ .text._ZN6Modbus4IstsEj
+                0x00000fe8       0x16 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000fe8                Modbus::Ists(unsigned int)
+ .text._ZN6Modbus4IregEj
+                0x00000ffe        0xa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00000ffe                Modbus::Ireg(unsigned int)
+ .text._ZN6Modbus17exceptionResponseEhh
+                0x00001008       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00001008                Modbus::exceptionResponse(unsigned char, unsigned char)
+ .text._ZN6Modbus13readRegistersEjj
+                0x0000102c       0x7c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x0000102c                Modbus::readRegisters(unsigned int, unsigned int)
+ .text._ZN6Modbus19writeSingleRegisterEjj
+                0x000010a8       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x000010a8                Modbus::writeSingleRegister(unsigned int, unsigned int)
+ .text._ZN6Modbus22writeMultipleRegistersEPhjjh
+                0x000010d8       0x9c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x000010d8                Modbus::writeMultipleRegisters(unsigned char*, unsigned int, unsigned int, unsigned char)
+ .text._ZN6Modbus9readCoilsEjj
+                0x00001174       0xa8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00001174                Modbus::readCoils(unsigned int, unsigned int)
+ .text._ZN6Modbus15readInputStatusEjj
+                0x0000121c       0xac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x0000121c                Modbus::readInputStatus(unsigned int, unsigned int)
+ .text._ZN6Modbus18readInputRegistersEjj
+                0x000012c8       0x7e C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x000012c8                Modbus::readInputRegisters(unsigned int, unsigned int)
+ .text._ZN6Modbus15writeSingleCoilEjj
+                0x00001346       0x4a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00001346                Modbus::writeSingleCoil(unsigned int, unsigned int)
+ .text._ZN6Modbus18writeMultipleCoilsEPhjjh
+                0x00001390       0xae C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x00001390                Modbus::writeMultipleCoils(unsigned char*, unsigned int, unsigned int, unsigned char)
+ .text._ZN6Modbus10receivePDUEPh
+                0x0000143e       0x9c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+                0x0000143e                Modbus::receivePDU(unsigned char*)
+ .text.NmiSR    0x000014da        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .text.FaultISR
-                0x00000cb8        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x000014dc        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .text.IntDefaultHandler
-                0x00000cba        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x000014de        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .text.ResetISR
-                0x00000cbc       0x98 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
-                0x00000cbc                ResetISR
+                0x000014e0       0x98 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x000014e0                ResetISR
  .text.ToneIntHandler
-                0x00000d54        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
-                0x00000d54                ToneIntHandler
- *fill*         0x00000d56        0x2 
- .text._sbrk    0x00000d58       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
-                0x00000d58                _sbrk
+                0x00001578        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x00001578                ToneIntHandler
+ *fill*         0x0000157a        0x2 
+ .text._sbrk    0x0000157c       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+                0x0000157c                _sbrk
  .text.GPIOXIntHandler
-                0x00000d80       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000d80                GPIOXIntHandler
+                0x000015a4       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000015a4                GPIOXIntHandler
  .text.GPIOAIntHandler
-                0x00000db0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000db0                GPIOAIntHandler
+                0x000015d4       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000015d4                GPIOAIntHandler
  .text.GPIOBIntHandler
-                0x00000dc0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000dc0                GPIOBIntHandler
+                0x000015e4       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000015e4                GPIOBIntHandler
  .text.GPIOCIntHandler
-                0x00000dd0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000dd0                GPIOCIntHandler
+                0x000015f4       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000015f4                GPIOCIntHandler
  .text.GPIODIntHandler
-                0x00000de0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000de0                GPIODIntHandler
+                0x00001604       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001604                GPIODIntHandler
  .text.GPIOEIntHandler
-                0x00000df0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000df0                GPIOEIntHandler
+                0x00001614       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001614                GPIOEIntHandler
  .text.GPIOFIntHandler
-                0x00000e00       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e00                GPIOFIntHandler
+                0x00001624       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001624                GPIOFIntHandler
  .text.GPIOGIntHandler
-                0x00000e10       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e10                GPIOGIntHandler
+                0x00001634       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001634                GPIOGIntHandler
  .text.GPIOHIntHandler
-                0x00000e20       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e20                GPIOHIntHandler
+                0x00001644       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001644                GPIOHIntHandler
  .text.GPIOJIntHandler
-                0x00000e30       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e30                GPIOJIntHandler
+                0x00001654       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001654                GPIOJIntHandler
  .text.GPIOKIntHandler
-                0x00000e40       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e40                GPIOKIntHandler
+                0x00001664       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001664                GPIOKIntHandler
  .text.GPIOLIntHandler
-                0x00000e50       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e50                GPIOLIntHandler
+                0x00001674       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001674                GPIOLIntHandler
  .text.GPIOMIntHandler
-                0x00000e60       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e60                GPIOMIntHandler
+                0x00001684       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001684                GPIOMIntHandler
  .text.GPIONIntHandler
-                0x00000e70       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e70                GPIONIntHandler
+                0x00001694       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x00001694                GPIONIntHandler
  .text.GPIOPIntHandler
-                0x00000e80       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e80                GPIOPIntHandler
+                0x000016a4       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000016a4                GPIOPIntHandler
  .text.GPIOQIntHandler
-                0x00000e90       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
-                0x00000e90                GPIOQIntHandler
+                0x000016b4       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x000016b4                GPIOQIntHandler
  .text.timerInit
-                0x00000ea0       0x58 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
-                0x00000ea0                timerInit
- .text.delay    0x00000ef8       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
-                0x00000ef8                delay
+                0x000016c4       0x58 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x000016c4                timerInit
+ .text.millis   0x0000171c        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x0000171c                millis
+ .text.delay    0x00001728       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x00001728                delay
  .text.delayMicroseconds
-                0x00000f10       0x50 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
-                0x00000f10                delayMicroseconds
+                0x00001740       0x50 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x00001740                delayMicroseconds
  .text.SysTickIntHandler
-                0x00000f60       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
-                0x00000f60                SysTickIntHandler
- .text.pinMode  0x00000f88       0xa8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
-                0x00000f88                pinMode
+                0x00001790       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x00001790                SysTickIntHandler
+ .text.analogRead
+                0x000017b8       0xe4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+                0x000017b8                analogRead
+ .text.pinMode  0x0000189c       0xa8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x0000189c                pinMode
  .text.digitalWrite
-                0x00001030       0x3c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
-                0x00001030                digitalWrite
+                0x00001944       0x3c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00001944                digitalWrite
  .text._ZN14HardwareSerial9availableEv
-                0x0000106c       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000106c                HardwareSerial::available()
+                0x00001980       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001980                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x0000107e       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000107e                HardwareSerial::peek()
+                0x00001992       0x12 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001992                HardwareSerial::peek()
  .text._ZN14HardwareSerial4readEv
-                0x00001090       0x26 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001090                HardwareSerial::read()
- *fill*         0x000010b6        0x2 
+                0x000019a4       0x26 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000019a4                HardwareSerial::read()
+ *fill*         0x000019ca        0x2 
  .text._ZN14HardwareSerial5flushEv
-                0x000010b8       0x2c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x000010b8                HardwareSerial::flush()
+                0x000019cc       0x2c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000019cc                HardwareSerial::flush()
  .text._ZN14HardwareSerialC2Ev
-                0x000010e4       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x000010e4                HardwareSerial::HardwareSerial()
-                0x000010e4                HardwareSerial::HardwareSerial()
+                0x000019f8       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000019f8                HardwareSerial::HardwareSerial()
+                0x000019f8                HardwareSerial::HardwareSerial()
  .text._ZN14HardwareSerialC2Em
-                0x00001114       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001114                HardwareSerial::HardwareSerial(unsigned long)
-                0x00001114                HardwareSerial::HardwareSerial(unsigned long)
+                0x00001a28       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001a28                HardwareSerial::HardwareSerial(unsigned long)
+                0x00001a28                HardwareSerial::HardwareSerial(unsigned long)
  .text._ZN14HardwareSerial8flushAllEv
-                0x00001144       0x34 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001144                HardwareSerial::flushAll()
+                0x00001a58       0x34 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001a58                HardwareSerial::flushAll()
  .text._ZN14HardwareSerial13primeTransmitEm
-                0x00001178       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001178                HardwareSerial::primeTransmit(unsigned long)
+                0x00001a8c       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001a8c                HardwareSerial::primeTransmit(unsigned long)
  .text._ZN14HardwareSerial5writeEh
-                0x000011f8       0x5c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x000011f8                HardwareSerial::write(unsigned char)
+                0x00001b0c       0x5c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001b0c                HardwareSerial::write(unsigned char)
  .text._ZN14HardwareSerial5beginEm
-                0x00001254      0x110 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001254                HardwareSerial::begin(unsigned long)
+                0x00001b68      0x110 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001b68                HardwareSerial::begin(unsigned long)
  .text._ZN14HardwareSerial14UARTIntHandlerEv
-                0x00001364       0xcc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001364                HardwareSerial::UARTIntHandler()
+                0x00001c78       0xcc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001c78                HardwareSerial::UARTIntHandler()
  .text.UARTIntHandler
-                0x00001430        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001430                UARTIntHandler
+                0x00001d44        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d44                UARTIntHandler
  .text.UARTIntHandler1
-                0x0000143c        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000143c                UARTIntHandler1
+                0x00001d50        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d50                UARTIntHandler1
  .text.UARTIntHandler2
-                0x00001448        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001448                UARTIntHandler2
+                0x00001d5c        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d5c                UARTIntHandler2
  .text.UARTIntHandler3
-                0x00001454        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001454                UARTIntHandler3
+                0x00001d68        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d68                UARTIntHandler3
  .text.UARTIntHandler4
-                0x00001460        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001460                UARTIntHandler4
+                0x00001d74        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d74                UARTIntHandler4
  .text.UARTIntHandler5
-                0x0000146c        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000146c                UARTIntHandler5
+                0x00001d80        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d80                UARTIntHandler5
  .text.UARTIntHandler6
-                0x00001478        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001478                UARTIntHandler6
+                0x00001d8c        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d8c                UARTIntHandler6
  .text.UARTIntHandler7
-                0x00001484        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001484                UARTIntHandler7
+                0x00001d98        0xc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001d98                UARTIntHandler7
  .text._Z11serialEventv
-                0x00001490        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001490                serialEvent()
+                0x00001da4        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001da4                serialEvent()
  .text._Z12serialEvent1v
-                0x00001492        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001492                serialEvent1()
+                0x00001da6        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001da6                serialEvent1()
  .text._Z12serialEvent2v
-                0x00001494        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001494                serialEvent2()
+                0x00001da8        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001da8                serialEvent2()
  .text._Z12serialEvent3v
-                0x00001496        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001496                serialEvent3()
+                0x00001daa        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001daa                serialEvent3()
  .text._Z12serialEvent4v
-                0x00001498        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x00001498                serialEvent4()
+                0x00001dac        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001dac                serialEvent4()
  .text._Z12serialEvent5v
-                0x0000149a        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000149a                serialEvent5()
+                0x00001dae        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001dae                serialEvent5()
  .text._Z12serialEvent6v
-                0x0000149c        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000149c                serialEvent6()
+                0x00001db0        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001db0                serialEvent6()
  .text._Z12serialEvent7v
-                0x0000149e        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000149e                serialEvent7()
+                0x00001db2        0x2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001db2                serialEvent7()
  .text._Z14serialEventRunv
-                0x000014a0       0x84 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x000014a0                serialEventRun()
+                0x00001db4       0x84 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00001db4                serialEventRun()
  .text.startup._GLOBAL__sub_I__ZN14HardwareSerialC2Ev
-                0x00001524       0x64 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .text._init    0x00001588      0x140 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
-                0x00001588                _init
+                0x00001e38       0x64 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .text._init    0x00001e9c      0x140 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+                0x00001e9c                _init
  .text.startup.main
-                0x000016c8       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
-                0x000016c8                main
+                0x00001fdc       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+                0x00001fdc                main
  .text._ZN5Print5writeEPKhj
-                0x000016e4       0x2c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
-                0x000016e4                Print::write(unsigned char const*, unsigned int)
+                0x00001ff8       0x2c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+                0x00001ff8                Print::write(unsigned char const*, unsigned int)
  .text._EEPROMWaitForDone
-                0x00001710       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
+                0x00002024       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
  .text._EEPROMSectorMaskClear
-                0x00001720       0x34 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
+                0x00002034       0x34 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
  .text.EEPROMMassErase
-                0x00001754       0x58 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
-                0x00001754                EEPROMMassErase
+                0x00002068       0x58 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
+                0x00002068                EEPROMMassErase
  .text.GPIOPadConfigSet
-                0x000017ac      0x130 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
-                0x000017ac                GPIOPadConfigSet
+                0x000020c0      0x130 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
+                0x000020c0                GPIOPadConfigSet
  .text.GPIOIntStatus
-                0x000018dc        0xe C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
-                0x000018dc                GPIOIntStatus
+                0x000021f0        0xe C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
+                0x000021f0                GPIOIntStatus
  .text.GPIOIntClear
-                0x000018ea        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
-                0x000018ea                GPIOIntClear
+                0x000021fe        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
+                0x000021fe                GPIOIntClear
  .text.I2CSlaveEnable
-                0x000018f0       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x000018f0                I2CSlaveEnable
+                0x00002204       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x00002204                I2CSlaveEnable
  .text.I2CSlaveInit
-                0x00001900       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x00001900                I2CSlaveInit
+                0x00002214       0x10 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x00002214                I2CSlaveInit
  .text.I2CSlaveIntEnableEx
-                0x00001910        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x00001910                I2CSlaveIntEnableEx
+                0x00002224        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x00002224                I2CSlaveIntEnableEx
  .text.I2CSlaveStatus
-                0x0000191c        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x0000191c                I2CSlaveStatus
+                0x00002230        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x00002230                I2CSlaveStatus
  .text.I2CSlaveDataPut
-                0x00001922        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x00001922                I2CSlaveDataPut
+                0x00002236        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x00002236                I2CSlaveDataPut
  .text.I2CSlaveDataGet
-                0x00001928        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
-                0x00001928                I2CSlaveDataGet
+                0x0000223c        0x6 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x0000223c                I2CSlaveDataGet
  .text.SysCtlPeripheralReset
-                0x0000192e       0x3a C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
-                0x0000192e                SysCtlPeripheralReset
+                0x00002242       0x3a C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
+                0x00002242                SysCtlPeripheralReset
  .text.SysCtlLDODeepSleepSet
-                0x00001968        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
-                0x00001968                SysCtlLDODeepSleepSet
+                0x0000227c        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
+                0x0000227c                SysCtlLDODeepSleepSet
  .text.SysCtlDeepSleepPowerSet
-                0x00001974        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
-                0x00001974                SysCtlDeepSleepPowerSet
+                0x00002288        0xc C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
+                0x00002288                SysCtlDeepSleepPowerSet
  .text.SysCtlDelay
-                0x00001980        0x8 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
-                0x00001980                SysCtlDelay
- .text.malloc   0x00001988       0x10 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
-                0x00001988                malloc
- .text.free     0x00001998       0x10 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
-                0x00001998                free
- .text._free_r  0x000019a8       0x9c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
-                0x000019a8                _free_r
+                0x00002294        0x8 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
+                0x00002294                SysCtlDelay
+ .text.malloc   0x0000229c       0x10 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
+                0x0000229c                malloc
+ .text.free     0x000022ac       0x10 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
+                0x000022ac                free
+ .text._free_r  0x000022bc       0x9c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
+                0x000022bc                _free_r
  .text._malloc_r
-                0x00001a44       0xbc c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x00001a44                _malloc_r
- .text._sbrk_r  0x00001b00       0x20 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
-                0x00001b00                _sbrk_r
+                0x00002358       0xbc c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00002358                _malloc_r
+ .text._sbrk_r  0x00002414       0x20 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
+                0x00002414                _sbrk_r
  .text.__malloc_lock
-                0x00001b20        0x2 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
-                0x00001b20                __malloc_lock
+                0x00002434        0x2 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
+                0x00002434                __malloc_lock
  .text.__malloc_unlock
-                0x00001b22        0x2 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
-                0x00001b22                __malloc_unlock
- .text          0x00001b24      0x370 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
-                0x00001b24                __aeabi_drsub
-                0x00001b2c                __aeabi_dsub
-                0x00001b2c                __subdf3
-                0x00001b30                __aeabi_dadd
-                0x00001b30                __adddf3
-                0x00001da8                __floatunsidf
-                0x00001da8                __aeabi_ui2d
-                0x00001dc8                __floatsidf
-                0x00001dc8                __aeabi_i2d
-                0x00001dec                __aeabi_f2d
-                0x00001dec                __extendsfdf2
-                0x00001e28                __floatundidf
-                0x00001e28                __aeabi_ul2d
-                0x00001e38                __floatdidf
-                0x00001e38                __aeabi_l2d
- .text          0x00001e94      0x424 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
-                0x00001e94                __aeabi_dmul
-                0x00001e94                __muldf3
-                0x000020e8                __divdf3
-                0x000020e8                __aeabi_ddiv
- .text          0x000022b8       0x40 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
-                0x000022b8                __aeabi_d2uiz
-                0x000022b8                __fixunsdfsi
+                0x00002436        0x2 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
+                0x00002436                __malloc_unlock
+ .text          0x00002438      0x370 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x00002438                __aeabi_drsub
+                0x00002440                __aeabi_dsub
+                0x00002440                __subdf3
+                0x00002444                __aeabi_dadd
+                0x00002444                __adddf3
+                0x000026bc                __floatunsidf
+                0x000026bc                __aeabi_ui2d
+                0x000026dc                __floatsidf
+                0x000026dc                __aeabi_i2d
+                0x00002700                __aeabi_f2d
+                0x00002700                __extendsfdf2
+                0x0000273c                __floatundidf
+                0x0000273c                __aeabi_ul2d
+                0x0000274c                __floatdidf
+                0x0000274c                __aeabi_l2d
+ .text          0x000027a8      0x424 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x000027a8                __aeabi_dmul
+                0x000027a8                __muldf3
+                0x000029fc                __divdf3
+                0x000029fc                __aeabi_ddiv
+ .text          0x00002bcc       0x40 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x00002bcc                __aeabi_d2uiz
+                0x00002bcc                __fixunsdfsi
  *(.glue_7t)
- .glue_7t       0x000022f8        0x0 linker stubs
+ .glue_7t       0x00002c0c        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x000022f8        0x0 linker stubs
+ .glue_7        0x00002c0c        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata._ZL10g_uli2cInt
-                0x000022f8       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c0c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL11g_uli2cBase
-                0x00002308       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c1c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL13g_uli2cConfig
-                0x00002318       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c2c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL13g_uli2cPeriph
-                0x00002338       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c4c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL14g_uli2cSCLPins
-                0x00002348       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c5c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL14g_uli2cSDAPins
-                0x00002358       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c6c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZL16g_uli2cSlaveBase
-                0x00002368       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c7c       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .rodata._ZTV7TwoWire
-                0x00002378       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x00002378                vtable for TwoWire
+                0x00002c8c       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x00002c8c                vtable for TwoWire
+ .rodata._ZL10_auchCRCHi
+                0x00002cb0      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .rodata._ZL10_auchCRCLo
+                0x00002db0      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .rodata.digital_pin_to_analog_in
+                0x00002eb0       0xa4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00002eb0                digital_pin_to_analog_in
  .rodata.digital_pin_to_bit_mask
-                0x0000239c       0x29 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
-                0x0000239c                digital_pin_to_bit_mask
+                0x00002f54       0x29 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00002f54                digital_pin_to_bit_mask
  .rodata.digital_pin_to_port
-                0x000023c5       0x29 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
-                0x000023c5                digital_pin_to_port
- *fill*         0x000023ee        0x2 
+                0x00002f7d       0x29 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00002f7d                digital_pin_to_port
+ *fill*         0x00002fa6        0x2 
  .rodata.port_to_base
-                0x000023f0       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
-                0x000023f0                port_to_base
+                0x00002fa8       0x1c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00002fa8                port_to_base
  .rodata._ZL11g_ulUARTInt
-                0x0000240c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00002fc4       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZL12g_ulUARTBase
-                0x0000242c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00002fe4       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZL12g_ulUARTPins
-                0x0000244c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00003004       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZL12g_ulUARTPort
-                0x0000246c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00003024       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZL14g_ulUARTConfig
-                0x0000248c       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00003044       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZL14g_ulUARTPeriph
-                0x000024cc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00003084       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .rodata._ZTV14HardwareSerial
-                0x000024ec       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x000024ec                vtable for HardwareSerial
+                0x000030a4       0x24 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000030a4                vtable for HardwareSerial
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002510                . = ALIGN (0x4)
+                0x000030c8                . = ALIGN (0x4)
  *(.init)
-                0x00002510                . = ALIGN (0x4)
-                0x00002510                __preinit_array_start = .
+                0x000030c8                . = ALIGN (0x4)
+                0x000030c8                __preinit_array_start = .
  *(SORT(.preinit_array*))
  *(.preinit_array)
-                0x00002510                __preinit_array_end = .
-                0x00002510                . = ALIGN (0x4)
-                0x00002510                __init_array_start = .
+                0x000030c8                __preinit_array_end = .
+                0x000030c8                . = ALIGN (0x4)
+                0x000030c8                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00002510        0x4 ./ModBus_Serial_Slave.o
- .init_array    0x00002514        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .init_array    0x00002518        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x0000251c                __init_array_end = .
-                0x0000251c                . = ALIGN (0x4)
+ .init_array    0x000030c8        0x4 ./ModBus_Serial_Slave.o
+ .init_array    0x000030cc        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .init_array    0x000030d0        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000030d4                __init_array_end = .
+                0x000030d4                . = ALIGN (0x4)
  *(.fini)
-                0x0000251c                . = ALIGN (0x4)
-                0x0000251c                __fini_array_start = .
+                0x000030d4                . = ALIGN (0x4)
+                0x000030d4                __fini_array_start = .
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x0000251c                __fini_array_end = .
-                0x0000251c                . = ALIGN (0x4)
-                0x0000251c                _etext = .
+                0x000030d4                __fini_array_end = .
+                0x000030d4                . = ALIGN (0x4)
+                0x000030d4                _etext = .
 
-.vfp11_veneer   0x0000251c        0x0
- .vfp11_veneer  0x0000251c        0x0 linker stubs
+.vfp11_veneer   0x000030d4        0x0
+ .vfp11_veneer  0x000030d4        0x0 linker stubs
 
-.v4_bx          0x0000251c        0x0
- .v4_bx         0x0000251c        0x0 linker stubs
+.v4_bx          0x000030d4        0x0
+ .v4_bx         0x000030d4        0x0 linker stubs
 
-.iplt           0x0000251c        0x0
- .iplt          0x0000251c        0x0 ./ModBus_Serial_Slave.o
+.iplt           0x000030d4        0x0
+ .iplt          0x000030d4        0x0 ./ModBus_Serial_Slave.o
 
-.rel.dyn        0x0000251c        0x0
- .rel.iplt      0x0000251c        0x0 ./ModBus_Serial_Slave.o
+.rel.dyn        0x000030d4        0x0
+ .rel.iplt      0x000030d4        0x0 ./ModBus_Serial_Slave.o
 
-.data           0x20000000       0x68 load address 0x0000251c
+.data           0x20000000       0x98 load address 0x000030d4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _data = .
  *(vtable)
  *(.data .data* .gnu.linkonce.d.*)
+ .data.data1    0x20000000       0x16 ./ModBus_Serial_Slave.o
+                0x20000000                data1
+ .data.data2    0x20000016       0x16 ./ModBus_Serial_Slave.o
+                0x20000016                data2
+ .data.ioconf2  0x2000002c        0x2 ./ModBus_Serial_Slave.o
+                0x2000002c                ioconf2
  .data._ZN7TwoWire9i2cModuleE
-                0x20000000        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x20000000                TwoWire::i2cModule
- *fill*         0x20000001        0x3 
+                0x2000002e        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x2000002e                TwoWire::i2cModule
+ *fill*         0x2000002f        0x1 
+ .data._readResolution
+                0x20000030        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
  .data._impure_ptr
-                0x20000004        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
-                0x20000004                _impure_ptr
+                0x20000034        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
+                0x20000034                _impure_ptr
  .data.impure_data
-                0x20000008       0x60 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
-                0x20000068                _edata = .
+                0x20000038       0x60 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
+                0x20000098                _edata = .
 
-.igot.plt       0x20000068        0x0 load address 0x00002584
- .igot.plt      0x20000068        0x0 ./ModBus_Serial_Slave.o
+.igot.plt       0x20000098        0x0 load address 0x0000316c
+ .igot.plt      0x20000098        0x0 ./ModBus_Serial_Slave.o
 
-.bss            0x20000068      0x4a8 load address 0x00002584
-                0x20000068                . = ALIGN (0x4)
-                0x20000068                _bss = .
+.bss            0x20000098      0x4b0 load address 0x0000316c
+                0x20000098                . = ALIGN (0x4)
+                0x20000098                _bss = .
  *(.bss .bss*)
- .bss.modbus    0x20000068       0x2c ./ModBus_Serial_Slave.o
-                0x20000068                modbus
- .bss.Wire      0x20000094       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x20000094                Wire
+ .bss.ioconf1   0x20000098        0x2 ./ModBus_Serial_Slave.o
+                0x20000098                ioconf1
+ *fill*         0x2000009a        0x2 
+ .bss.modbus    0x2000009c       0x2c ./ModBus_Serial_Slave.o
+                0x2000009c                modbus
+ .bss.oldb      0x200000c8        0x4 ./ModBus_Serial_Slave.o
+                0x200000c8                oldb
+ .bss.update_time
+                0x200000cc        0x4 ./ModBus_Serial_Slave.o
+                0x200000cc                update_time
+ .bss.Wire      0x200000d0       0x10 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000d0                Wire
  .bss._ZN7TwoWire11rxReadIndexE
-                0x200000a4        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a4                TwoWire::rxReadIndex
+                0x200000e0        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e0                TwoWire::rxReadIndex
  .bss._ZN7TwoWire11txReadIndexE
-                0x200000a5        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a5                TwoWire::txReadIndex
+                0x200000e1        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e1                TwoWire::txReadIndex
  .bss._ZN7TwoWire12currentStateE
-                0x200000a6        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a6                TwoWire::currentState
+                0x200000e2        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e2                TwoWire::currentState
  .bss._ZN7TwoWire12rxWriteIndexE
-                0x200000a7        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a7                TwoWire::rxWriteIndex
+                0x200000e3        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e3                TwoWire::rxWriteIndex
  .bss._ZN7TwoWire12slaveAddressE
-                0x200000a8        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a8                TwoWire::slaveAddress
+                0x200000e4        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e4                TwoWire::slaveAddress
  .bss._ZN7TwoWire12transmittingE
-                0x200000a9        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000a9                TwoWire::transmitting
+                0x200000e5        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e5                TwoWire::transmitting
  .bss._ZN7TwoWire12txWriteIndexE
-                0x200000aa        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000aa                TwoWire::txWriteIndex
- *fill*         0x200000ab        0x1 
+                0x200000e6        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e6                TwoWire::txWriteIndex
+ *fill*         0x200000e7        0x1 
  .bss._ZN7TwoWire14user_onReceiveE
-                0x200000ac        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000ac                TwoWire::user_onReceive
+                0x200000e8        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000e8                TwoWire::user_onReceive
  .bss._ZN7TwoWire14user_onRequestE
-                0x200000b0        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000b0                TwoWire::user_onRequest
+                0x200000ec        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000ec                TwoWire::user_onRequest
  .bss._ZN7TwoWire8rxBufferE
-                0x200000b4       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000b4                TwoWire::rxBuffer
+                0x200000f0       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x200000f0                TwoWire::rxBuffer
  .bss._ZN7TwoWire8txBufferE
-                0x200000f4       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x200000f4                TwoWire::txBuffer
+                0x20000130       0x40 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x20000130                TwoWire::txBuffer
  .bss._ZN7TwoWire9txAddressE
-                0x20000134        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
-                0x20000134                TwoWire::txAddress
- *fill*         0x20000135        0x3 
+                0x20000170        0x1 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+                0x20000170                TwoWire::txAddress
+ *fill*         0x20000171        0x3 
  .bss.heap_end.7693
-                0x20000138        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .bss.cbFuncsA  0x2000013c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsB  0x2000015c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsC  0x2000017c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsD  0x2000019c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsE  0x200001bc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsF  0x200001dc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsG  0x200001fc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsH  0x2000021c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsJ  0x2000023c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsK  0x2000025c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsL  0x2000027c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsM  0x2000029c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsN  0x200002bc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsP  0x200002dc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .bss.cbFuncsQ  0x200002fc       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+                0x20000174        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .bss.cbFuncsA  0x20000178       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsB  0x20000198       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsC  0x200001b8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsD  0x200001d8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsE  0x200001f8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsF  0x20000218       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsG  0x20000238       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsH  0x20000258       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsJ  0x20000278       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsK  0x20000298       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsL  0x200002b8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsM  0x200002d8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsN  0x200002f8       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsP  0x20000318       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .bss.cbFuncsQ  0x20000338       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
  .bss.SysTickCbFuncs
-                0x2000031c       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+                0x20000358       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .bss.milliseconds
-                0x2000033c        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .bss.Serial    0x20000340       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x20000340                Serial
- .bss.Serial1   0x20000378       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x20000378                Serial1
- .bss.Serial2   0x200003b0       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x200003b0                Serial2
- .bss.Serial3   0x200003e8       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x200003e8                Serial3
- .bss.Serial4   0x20000420       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x20000420                Serial4
- .bss.Serial5   0x20000458       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x20000458                Serial5
- .bss.Serial6   0x20000490       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x20000490                Serial6
- .bss.Serial7   0x200004c8       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
-                0x200004c8                Serial7
+                0x20000378        0x4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .bss.Serial    0x2000037c       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x2000037c                Serial
+ .bss.Serial1   0x200003b4       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x200003b4                Serial1
+ .bss.Serial2   0x200003ec       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x200003ec                Serial2
+ .bss.Serial3   0x20000424       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x20000424                Serial3
+ .bss.Serial4   0x2000045c       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x2000045c                Serial4
+ .bss.Serial5   0x20000494       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x20000494                Serial5
+ .bss.Serial6   0x200004cc       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x200004cc                Serial6
+ .bss.Serial7   0x20000504       0x38 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x20000504                Serial7
  .bss.__malloc_free_list
-                0x20000500        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20000500                __malloc_free_list
+                0x2000053c        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2000053c                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x20000504        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20000504                __malloc_sbrk_start
+                0x20000540        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20000540                __malloc_sbrk_start
  *(COMMON)
- COMMON         0x20000508        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
-                0x20000508                errno
-                0x2000050c                . = ALIGN (0x4)
-                0x2000050c                _ebss = .
-                0x20000510                . = ALIGN (0x8)
- *fill*         0x2000050c        0x4 
+ COMMON         0x20000544        0x4 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
+                0x20000544                errno
+                0x20000548                . = ALIGN (0x4)
+                0x20000548                _ebss = .
+                0x20000548                . = ALIGN (0x8)
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                PROVIDE (__exidx_end, .)
-                0x20000510                . = ALIGN (0x4)
-                0x20000510                _end = .
-                0x20000510                PROVIDE (end, _end)
+                0x20000548                . = ALIGN (0x4)
+                0x20000548                _end = .
+                0x20000548                PROVIDE (end, _end)
                 0x20008000                PROVIDE (_estack, (ORIGIN (ram) + LENGTH (ram)))
 LOAD C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a
 LOAD C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a
@@ -1422,45 +1483,48 @@ LOAD c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi
 END GROUP
 OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
 
-.debug_info     0x00000000    0x1bc33
- .debug_info    0x00000000     0x6882 ./ModBus_Serial_Slave.o
- .debug_info    0x00006882     0x3c47 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .debug_info    0x0000a4c9     0x3368 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .debug_info    0x0000d831     0x24ec C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .debug_info    0x0000fd1d     0x1276 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .debug_info    0x00010f93      0xfa9 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .debug_info    0x00011f3c      0xe8b C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_info    0x00012dc7      0xe06 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_info    0x00013bcd     0x354a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_info    0x00017117     0x13a5 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
- .debug_info    0x000184bc     0x3777 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+.debug_info     0x00000000    0x1cc12
+ .debug_info    0x00000000     0x68b8 ./ModBus_Serial_Slave.o
+ .debug_info    0x000068b8     0x3c47 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .debug_info    0x0000a4ff     0x3368 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .debug_info    0x0000d867     0x24ec C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+ .debug_info    0x0000fd53     0x1276 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .debug_info    0x00010fc9      0xfa9 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .debug_info    0x00011f72      0xe8b C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .debug_info    0x00012dfd      0xfa9 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_info    0x00013da6      0xe06 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_info    0x00014bac     0x354a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_info    0x000180f6     0x13a5 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_info    0x0001949b     0x3777 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_abbrev   0x00000000     0x33ab
- .debug_abbrev  0x00000000      0x550 ./ModBus_Serial_Slave.o
- .debug_abbrev  0x00000550      0x7df C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .debug_abbrev  0x00000d2f      0x58c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .debug_abbrev  0x000012bb      0x55d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .debug_abbrev  0x00001818      0x300 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .debug_abbrev  0x00001b18      0x2a2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .debug_abbrev  0x00001dba      0x2e6 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_abbrev  0x000020a0      0x27a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_abbrev  0x0000231a      0x711 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_abbrev  0x00002a2b      0x32b C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
- .debug_abbrev  0x00002d56      0x655 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+.debug_abbrev   0x00000000     0x36c6
+ .debug_abbrev  0x00000000      0x538 ./ModBus_Serial_Slave.o
+ .debug_abbrev  0x00000538      0x7df C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .debug_abbrev  0x00000d17      0x58c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .debug_abbrev  0x000012a3      0x55d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+ .debug_abbrev  0x00001800      0x300 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .debug_abbrev  0x00001b00      0x2a2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .debug_abbrev  0x00001da2      0x2e6 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .debug_abbrev  0x00002088      0x333 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_abbrev  0x000023bb      0x27a C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_abbrev  0x00002635      0x711 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_abbrev  0x00002d46      0x32b C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_abbrev  0x00003071      0x655 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_loc      0x00000000     0x2e29
- .debug_loc     0x00000000       0x29 ./ModBus_Serial_Slave.o
- .debug_loc     0x00000029      0x685 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .debug_loc     0x000006ae      0x2c5 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .debug_loc     0x00000973      0xd03 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .debug_loc     0x00001676      0x135 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .debug_loc     0x000017ab      0x228 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .debug_loc     0x000019d3       0xcc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_loc     0x00001a9f      0x379 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_loc     0x00001e18      0x329 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_loc     0x00002141      0xce8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+.debug_loc      0x00000000     0x31db
+ .debug_loc     0x00000000       0x5a ./ModBus_Serial_Slave.o
+ .debug_loc     0x0000005a      0x685 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .debug_loc     0x000006df      0x2c5 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .debug_loc     0x000009a4      0xd03 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+ .debug_loc     0x000016a7      0x135 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .debug_loc     0x000017dc      0x228 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .debug_loc     0x00001a04       0xcc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .debug_loc     0x00001ad0      0x381 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_loc     0x00001e51      0x379 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_loc     0x000021ca      0x329 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_loc     0x000024f3      0xce8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_aranges  0x00000000      0x680
+.debug_aranges  0x00000000      0x6d8
  .debug_aranges
                 0x00000000       0x30 ./ModBus_Serial_Slave.o
  .debug_aranges
@@ -1476,15 +1540,17 @@ OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
  .debug_aranges
                 0x000003c0       0x70 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .debug_aranges
-                0x00000430       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x00000430       0x58 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
  .debug_aranges
-                0x00000460       0xf8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x00000488       0x30 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .debug_aranges
-                0x00000558       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+                0x000004b8       0xf8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .debug_aranges
-                0x00000580      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+                0x000005b0       0x28 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_aranges
+                0x000005d8      0x100 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_ranges   0x00000000      0x898
+.debug_ranges   0x00000000      0x910
  .debug_ranges  0x00000000       0x38 ./ModBus_Serial_Slave.o
  .debug_ranges  0x00000038      0x1a8 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
  .debug_ranges  0x000001e0       0x50 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
@@ -1492,25 +1558,27 @@ OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
  .debug_ranges  0x000003d0       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .debug_ranges  0x00000450       0x98 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
  .debug_ranges  0x000004e8       0x90 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_ranges  0x00000578       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_ranges  0x00000598      0x148 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_ranges  0x000006e0       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
- .debug_ranges  0x000006f8      0x1a0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+ .debug_ranges  0x00000578       0x78 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_ranges  0x000005f0       0x20 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_ranges  0x00000610      0x148 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_ranges  0x00000758       0x18 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_ranges  0x00000770      0x1a0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_line     0x00000000     0x46d8
- .debug_line    0x00000000      0x6be ./ModBus_Serial_Slave.o
- .debug_line    0x000006be      0x926 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .debug_line    0x00000fe4      0x6ab C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .debug_line    0x0000168f      0x865 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .debug_line    0x00001ef4      0x4ac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .debug_line    0x000023a0      0x519 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .debug_line    0x000028b9      0x4bd C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_line    0x00002d76      0x3b2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_line    0x00003128      0x84c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_line    0x00003974      0x550 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
- .debug_line    0x00003ec4      0x814 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+.debug_line     0x00000000     0x4b34
+ .debug_line    0x00000000      0x6ca ./ModBus_Serial_Slave.o
+ .debug_line    0x000006ca      0x926 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .debug_line    0x00000ff0      0x6ab C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .debug_line    0x0000169b      0x865 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+ .debug_line    0x00001f00      0x4ac C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .debug_line    0x000023ac      0x519 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .debug_line    0x000028c5      0x4bd C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .debug_line    0x00002d82      0x450 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_line    0x000031d2      0x3b2 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_line    0x00003584      0x84c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_line    0x00003dd0      0x550 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_line    0x00004320      0x814 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
 
-.debug_str      0x00000000     0x3b83
+.debug_str      0x00000000     0x3cc9
  .debug_str     0x00000000     0x1e2e ./ModBus_Serial_Slave.o
                                0x1fc1 (size before relaxing)
  .debug_str     0x00001e2e      0x875 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
@@ -1525,13 +1593,15 @@ OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
                                 0xa2d (size before relaxing)
  .debug_str     0x00003019      0x151 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
                                 0x90f (size before relaxing)
- .debug_str     0x0000316a       0x95 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_str     0x0000316a      0x150 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+                                0x92e (size before relaxing)
+ .debug_str     0x000032ba       0x8b C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
                                 0x861 (size before relaxing)
- .debug_str     0x000031ff      0x4fa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_str     0x00003345      0x4fa C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
                                0x2051 (size before relaxing)
- .debug_str     0x000036f9       0x6d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_str     0x0000383f       0x6d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
                                 0xab2 (size before relaxing)
- .debug_str     0x00003766      0x41d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+ .debug_str     0x000038ac      0x41d C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
                                0x1a58 (size before relaxing)
 
 .comment        0x00000000       0xef
@@ -1543,6 +1613,7 @@ OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .comment       0x0000007f       0x80 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
@@ -1570,60 +1641,63 @@ OUTPUT(ModBus_Serial_Slave.out elf32-littlearm)
  .ARM.attributes
                 0x00000156       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
  .ARM.attributes
-                0x0000018f       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+                0x0000018f       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
  .ARM.attributes
-                0x000001c8       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+                0x000001c8       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
  .ARM.attributes
-                0x00000201       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+                0x00000201       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
  .ARM.attributes
-                0x0000023a       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+                0x0000023a       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
  .ARM.attributes
-                0x00000273       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
+                0x00000273       0x39 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
  .ARM.attributes
-                0x000002ae       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
+                0x000002ac       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(eeprom.o)
  .ARM.attributes
-                0x000002e9       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
+                0x000002e7       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(gpio.o)
  .ARM.attributes
-                0x00000324       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
+                0x00000322       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(i2c.o)
  .ARM.attributes
-                0x0000035f       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
+                0x0000035d       0x3b C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib\libdriverlib.a(sysctl.o)
  .ARM.attributes
-                0x00000393       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
+                0x00000398       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
  .ARM.attributes
-                0x000003c7       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x000003cc       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x000003fb       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
+                0x00000400       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x0000042f       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
+                0x00000434       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x00000463       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
+                0x00000468       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x00000497       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
+                0x0000049c       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x000004cb       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x000004d0       0x34 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x000004ed       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x00000504       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x0000050f       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+                0x00000526       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000548       0x22 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_frame    0x00000000     0x1530
- .debug_frame   0x00000000       0x5c ./ModBus_Serial_Slave.o
- .debug_frame   0x0000005c      0x300 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
- .debug_frame   0x0000035c       0xfc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
- .debug_frame   0x00000458      0x348 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
- .debug_frame   0x000007a0      0x1b0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
- .debug_frame   0x00000950      0x164 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
- .debug_frame   0x00000ab4      0x13c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
- .debug_frame   0x00000bf0       0x74 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
- .debug_frame   0x00000c64      0x308 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
- .debug_frame   0x00000f6c       0x48 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
- .debug_frame   0x00000fb4      0x310 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
- .debug_frame   0x000012c4       0x30 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x000012f4       0x38 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000132c       0x2c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00001358       0x2c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00001384       0x30 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x000013b4       0x5c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00001410       0xac c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x000014bc       0x50 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x0000150c       0x24 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+.debug_frame    0x00000000     0x1624
+ .debug_frame   0x00000000       0x6c ./ModBus_Serial_Slave.o
+ .debug_frame   0x0000006c      0x300 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Wire/Debug\libtivac_EK-TM4C123GXL_Wire.a(Wire.o)
+ .debug_frame   0x0000036c       0xfc C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_ModbusSerial/Debug\libtivac_EK-TM4C123GXL_ModbusSerial.a(ModbusSerial.o)
+ .debug_frame   0x00000468      0x348 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_Modbus/Debug\libtivac_EK-TM4C123GXL_Modbus.a(Modbus.o)
+ .debug_frame   0x000007b0      0x1b0 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(startup_gcc.o)
+ .debug_frame   0x00000960      0x164 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(WInterrupts.o)
+ .debug_frame   0x00000ac4      0x13c C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring.o)
+ .debug_frame   0x00000c00       0xe4 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_analog.o)
+ .debug_frame   0x00000ce4       0x74 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(wiring_digital.o)
+ .debug_frame   0x00000d58      0x308 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(HardwareSerial.o)
+ .debug_frame   0x00001060       0x48 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(main.o)
+ .debug_frame   0x000010a8      0x310 C:/Users/admin/workspace_v8/tivac_EK-TM4C123GXL_core/Debug\libtivac_EK-TM4C123GXL_core.a(Print.o)
+ .debug_frame   0x000013b8       0x30 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x000013e8       0x38 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001420       0x2c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000144c       0x2c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001478       0x30 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x000014a8       0x5c c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00001504       0xac c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x000015b0       0x50 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00001600       0x24 c:/users/admin/appdata/local/energia15/packages/energia/tools/arm-none-eabi-gcc/6.3.1-20170620/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
