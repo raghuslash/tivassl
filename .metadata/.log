@@ -1969,3 +1969,28 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:24:08.418
 !MESSAGE Indexed 'ModBus_SSL_Test' (1 sources, 3 headers) in 0.116 sec: 40 declarations; 189 references; 4 unresolved inclusions; 3 syntax errors; 92 unresolved names (29%)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:36:32.624
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:36:32.637
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:48:02.351
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:48:02.363
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:51:06.011
+!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Target must be connected before calling the function
+
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2018-08-02 18:51:06.030
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@195d63): Status ERROR: com.ti.ccstudio.debug code=20003 Target must be connected before calling the function null' resulted in an error.
+!SUBENTRY 1 com.ti.ccstudio.debug 4 20003 2018-08-02 18:51:06.030
+!MESSAGE Target must be connected before calling the function

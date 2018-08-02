@@ -11,7 +11,7 @@
 #define PRINTREGISTERS
 
 // ModBus Port information
-#define BAUD 9600
+#define BAUD 19200
 #define ID 1                    //MODBUS SLAVE ID
 #define TXPIN 5                 //send/receive enable for RS485
 #define VLC_STR_LEN 100         //MAX number of characters to send in VLC data.
@@ -44,6 +44,9 @@ unsigned long inc_time = 0;
 #define BRIGHTNESS_H 2000
 #define CHIP_TEMP_H 3000
 
+#define VLC_ON_COIL 1000         //Enable to start VLC
+
+
 
 byte ioconf1[2]={0x00,0x00};  //GPIO expander configs
 byte ioconf2[2]={0x01,0x00};
@@ -59,6 +62,7 @@ int oldb=0;
 char data[VLC_STR_LEN]="CPS";              //Initially transmit this string
 char olddata[VLC_STR_LEN]="CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
+bool sendVLC=false;                    //Set to true to start VLC on startup
 
 
 char* interleaver(char* s){
@@ -144,7 +148,7 @@ void send_vlc_data(char* data)
 
     int i=0,j=0;
 //        GPIOPinWrite(GPIO_PORTB_BASE,GPIO_PIN_6, GPIO_PIN_6);
-    digitalWrite(VLC_MODULATION_PIN, LOW);
+    digitalWrite(VLC_MODULATION_PIN, HIGH);
     delayMicroseconds(150);
     i=0;
     while(*data++ != '\0'){
@@ -209,6 +213,10 @@ void setup() {
   modbus.addHreg(BRIGHTNESS_H, 50);
   modbus.addHreg(CHIP_TEMP_H, 0);
 
+  //Coil to control VLC transmission
+
+  modbus.addIreg(VLC_ON_COIL, sendVLC);
+
   for(int i=VLC_STR_LEN; i<(VLC_STR_LEN+VLC_START_H); i++)
       modbus.addHreg(i, '\0');
   ///Initialize to send CPS
@@ -252,6 +260,7 @@ void loop() {
 
     if(modbus.task())
   {
+        sendVLC=modbus.Ireg(VLC_ON_COIL);
       //UPDATE BRIGHTNESS
       //UPDATE BRIGHTNESS OF LAMP
         int b=modbus.Hreg(BRIGHTNESS_H);
@@ -277,15 +286,24 @@ void loop() {
       int i=0;                          //UPDATE VLC STRING
 
       do{
-          data[i]=char(modbus.Hreg(i+VLC_STR_LEN));
+          data[i]=char(modbus.Hreg(i+VLC_START_H));
           i++;
       }while(modbus.Hreg(i)!=0);   //Read String from MODBUS Stack
-
+      data[i]=0;
+      if (olddata!=data)
+      {
       interleaver(data);
       manchester(data, interout, manout);
       foo(data, manout, final);
+      i=0;
+      while(data[i]!=0){
+            olddata[i]=data[i];
+            i++;
+      }
+      }
   }
 
+  if(sendVLC)
   send_vlc_data(data);//SEND ENCODED VLC STRING
 
   if (millis() > update_time + 2000)
