@@ -1865,3 +1865,107 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 !ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 12:46:53.766
 !MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
 
+!SESSION 2018-08-02 11:15:36.836 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180301-0715
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-08-02 11:15:47.264
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.ti.common.core 4 0 2018-08-02 11:15:48.267
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-08-02 11:15:48.314
+!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.485
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.579
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.595
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2018-08-02 11:17:22.802
+!MESSAGE Unexpected CCS exit detected [31/7/18 7:49 PM]!!!
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 13:16:33.568
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 13:16:33.578
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:05.468
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:05.482
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:11.512
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:11.527
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:14.715
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:14.715
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.149
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.165
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.424
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.437
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.684
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.715
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:19.620
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:19.636
+!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:20:35.907
+!MESSAGE Indexed 'SSL_Controller_V2' (12 sources, 42 headers) in 3.08 sec: 3,375 declarations; 13,652 references; 7 unresolved inclusions; 1 syntax errors; 1,446 unresolved names (7.8%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:21:51.574
+!MESSAGE Indexed 'SSL_Controller_Original (dont modify)' (12 sources, 42 headers) in 1.58 sec: 3,351 declarations; 12,244 references; 1 unresolved inclusions; 5 syntax errors; 2,923 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:22:48.988
+!MESSAGE Indexed 'SSLV2.1 (use for deployment)' (1 sources, 20 headers) in 0.401 sec: 344 declarations; 728 references; 7 unresolved inclusions; 9 syntax errors; 173 unresolved names (14%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:24:08.418
+!MESSAGE Indexed 'ModBus_SSL_Test' (1 sources, 3 headers) in 0.116 sec: 40 declarations; 189 references; 4 unresolved inclusions; 3 syntax errors; 92 unresolved names (29%)
