@@ -12600,3 +12600,76 @@ Finished building: "ModBus_SSL_Test.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_Modbus ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_ModbusSerial ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_Wire ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_core ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_Modbus ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_Wire ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_core ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tivac_EK-TM4C123GXL_ModbusSerial ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ModBus_SSL_Test ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'ModBus_SSL_Test.out' is up to date.
+gmake[1]: Nothing to be done for 'secondary-outputs'.
+
+**** Build Finished ****

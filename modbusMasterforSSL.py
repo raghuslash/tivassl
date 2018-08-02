@@ -42,6 +42,8 @@ ldr_addr=3003
 
 #CHIP TEMPERATURE IN HOLDING REGISTER
 chip_temp_adc_adr=3000
+brightness_reg_adr=2000
+vlc_data_reg_ard=1000
 
 while (1):
     
@@ -68,10 +70,26 @@ while (1):
     time.sleep(3)
     if msvcrt.kbhit():
         print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-        br=input("Enter Brightness Value: ")
-        br=int(br)
-        print(br)
-        mbclient.write_register(2000, br, unit=1)
+        op=input("1 - Change Brightness\n2 - Change VLC data\nSelect option number: ")
+        op=int(op)
+        if op==1:
+            br=input("Enter Brightness Value: ")
+            br=int(br)
+            # print(br)
+            mbclient.write_register(brightness_reg_adr, br, unit=1)
+        elif op==2:
+            vlcdata=input("Enter new VLC data string: ")
+            arrdata=list(vlcdata)
+            for i in range(len(arrdata)):
+                intdata=int((ord(arrdata[i])))
+                print(arrdata[i])
+                mbclient.write_register(vlc_data_reg_ard+i, intdata, unit=1)
+            mbclient.write_register(vlc_data_reg_ard+i+1, 0, unit=1)
+        else:
+            print("Invalid option!!")
+            continue
+
+            
 #def send_cmd(x):
 #    result=mbclient.write_register(0, x, unit=1)
 #    print(result)
