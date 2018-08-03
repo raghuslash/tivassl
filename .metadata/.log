@@ -1,4 +1,4 @@
-!SESSION 2018-07-27 12:33:17.531 -----------------------------------------------
+!SESSION 2018-08-03 12:56:07.555 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180301-0715
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
@@ -6,13 +6,13 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
 Framework arguments:  -product com.ti.ccstudio.branding.product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
 
-!ENTRY com.ti.common.core 4 0 2018-07-27 12:33:20.346
+!ENTRY com.ti.common.core 4 0 2018-08-03 12:56:10.338
 !MESSAGE path=ccs_base/DebugServer
 
-!ENTRY com.ti.common.core 4 0 2018-07-27 12:33:20.350
+!ENTRY com.ti.common.core 4 0 2018-08-03 12:56:10.338
 !MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
 
-!ENTRY org.eclipse.equinox.event 4 0 2018-07-27 12:33:24.496
+!ENTRY org.eclipse.equinox.event 4 0 2018-08-03 12:56:12.995
 !MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@89a72b (elementId: org.eclipse.e4.primaryDataStack, tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@15404a1, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@89a72b (elementId: org.eclipse.e4.primaryDataStack, tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@15404a1, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@b2b947
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
@@ -183,637 +183,30 @@ Caused by: java.lang.IllegalArgumentException:
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 150 more
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:33:24.745
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 12:56:13.182
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:33:24.865
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 12:56:13.385
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:33:24.881
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 12:56:13.416
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-27 12:35:12.848
-!MESSAGE Indexed 'SSL_Controller_V2.0' (12 sources, 16 headers) in 1.81 sec: 2,394 declarations; 5,376 references; 93 unresolved inclusions; 1 syntax errors; 4,057 unresolved names (34%)
-!SESSION 2018-07-27 12:37:26.391 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:05.368
+!MESSAGE Indexed 'tivac_EK-LM4F120XL_Modbus' (0 sources, 0 headers) in 0.074 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.ti.common.core 4 0 2018-07-27 12:37:27.878
-!MESSAGE path=ccs_base/DebugServer
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:05.419
+!MESSAGE Indexed 'tivac_EK-LM4F120XL_vlcfunctions' (0 sources, 0 headers) in 0.043 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.ti.common.core 4 0 2018-07-27 12:37:27.878
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:05.460
+!MESSAGE Indexed 'tivac_EK-LM4F120XL_Wire' (0 sources, 0 headers) in 0.03 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:37:36.692
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:37:36.785
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-27 12:37:36.985
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.ui 2 2 2018-07-27 12:40:36.023
-!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
-
-!ENTRY org.eclipse.jface 2 0 2018-07-27 12:44:09.149
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2018-07-27 12:44:09.149
-!MESSAGE A conflict occurred for ALT+E:
-Binding(ALT+E,
-	ParameterizedCommand(Command(org.eclipse.tm.terminal.command1,Terminal view insert,
-		,
-		Category(org.eclipse.tm.terminal.category1,Terminal view commands,Terminal view commands,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1730f36,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.tm.terminal.TerminalContext,,,system)
-Binding(ALT+E,
-	ParameterizedCommand(Command(com.ti.ccstudio.debug.ui.command.restoreDebugState,Restore Debug State,
-		Restore debug state for the selected core(s),
-		Category(com.ti.ccstudio.debug.ui.commandCategory,Code Composer Studio Debug Commands,Set of commands for Code Composer Studio debug actions,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15573d5,
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.debug.ui.debugging,,,system)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-27 12:47:58.320
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-27 12:47:58.384
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-27 12:48:13.154
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-27 12:48:13.291
-!MESSAGE DS_ERROR: Error connecting to the target:
-Unable to communicate with the device. Please check your connection.
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-27 12:55:43.283
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\SSL_Controller_V2.0\Debug\SSL_Controller_V2.0.out Could not open file
-
-!SESSION 2018-07-29 07:19:20.182 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 4 0 2018-07-29 07:19:25.166
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-07-29 07:19:25.214
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-29 07:20:13.486
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-29 07:20:13.626
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-29 07:20:13.658
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.app.center 4 0 2018-07-29 07:20:17.482
-!MESSAGE Unable to read http://software-dl.ti.com/ccs/non-esd/ccs_appcenter/apps_8.1.0.json file.
+!ENTRY org.eclipse.ui 4 0 2018-08-03 12:57:05.777
+!MESSAGE Unhandled event loop exception
 !STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:178)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1546)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
-	at java.net.URL.openStream(URL.java:1045)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.readFile(CCSAppCenter.java:196)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:212)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:211)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:183)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:19.990
-!MESSAGE Connection to http://software-dl.ti.com/ccs/esd/CCSv8/Updates/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:20.417
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/esd/CCSv8/Updates/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:21.276
-!MESSAGE Connection to http://software-dl.ti.com/ccs/esd/gcc_arm/7.2.1/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:21.542
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/esd/gcc_arm/7.2.1/content.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:21.557
-!MESSAGE Connection to http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/gcc/Updates/win32/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:21.792
-!MESSAGE Unknown Host: http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/gcc/Updates/win32/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:21.823
-!MESSAGE Connection to http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:22.057
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/non-esd/eclipse_ide/v8.0/all_extras_repo/content.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:22.089
-!MESSAGE Connection to http://software-dl.ti.com/ccs/esd/msp430/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:22.307
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/esd/msp430/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:22.338
-!MESSAGE Connection to http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:22.588
-!MESSAGE Connection to http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:22.791
-!MESSAGE Unknown Host: http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:22.807
-!MESSAGE Connection to http://software-dl.ti.com/ccs/non-esd/dvt/ccs6.0/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:23.041
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/non-esd/dvt/ccs6.0/content.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:23.057
-!MESSAGE Connection to http://software-dl.ti.com/ccs/esd/device_support_keystone2/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:23.323
-!MESSAGE Unknown Host: http://software-dl.ti.com/ccs/esd/device_support_keystone2/content.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:23.339
-!MESSAGE Connection to http://support.spectrumdigital.com/ccs51/Updates/p2.index failed on support.spectrumdigital.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: support.spectrumdigital.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:23.573
-!MESSAGE Unknown Host: http://support.spectrumdigital.com/ccs51/Updates/content.xml
-!STACK 0
-java.net.UnknownHostException: support.spectrumdigital.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:23.605
-!MESSAGE Connection to http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/p2.index failed on software-dl.ti.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:23.823
-!MESSAGE Unknown Host: http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/content.xml
-!STACK 0
-java.net.UnknownHostException: software-dl.ti.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-29 07:20:23.839
-!MESSAGE Connection to http://www.blackhawk-dsp.com/updates/ccsv53/p2.index failed on www.blackhawk-dsp.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: www.blackhawk-dsp.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-29 07:20:24.073
-!MESSAGE Unknown Host: http://www.blackhawk-dsp.com/updates/ccsv53/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: www.blackhawk-dsp.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.cdt.ui 4 4 2018-07-29 07:49:01.939
-!MESSAGE Error
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:65)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
-	at org.eclipse.cdt.core.CCorePlugin$2.run(CCorePlugin.java:966)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:961)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:956)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.createIProject(CDTCommonProjectWizard.java:322)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1$1.run(CDTCommonProjectWizard.java:257)
-	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1.run(CDTCommonProjectWizard.java:268)
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
 	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:58)
 	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:168)
 	at org.eclipse.ui.internal.UISynchronizer.lambda$0(UISynchronizer.java:150)
@@ -821,12 +214,13 @@ org.eclipse.core.internal.resources.ResourceException: A resource exists on disk
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
 	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.invokeRunnable(CDTCommonProjectWizard.java:177)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.getProject(CDTCommonProjectWizard.java:155)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.performFinish(CDTCommonProjectWizard.java:193)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:396)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.open(MessageDialogWithToggle.java:119)
+	at org.eclipse.jface.dialogs.MessageDialogWithToggle.openYesNoQuestion(MessageDialogWithToggle.java:365)
+	at com.ti.ccstudio.energia.ui.internal.EnergiaUIPreferences.shouldSwitchPerspective(EnergiaUIPreferences.java:70)
+	at com.ti.ccstudio.energia.ui.internal.wizards.importexport.ImportSketchWizard.performFinish(ImportSketchWizard.java:135)
 	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:778)
 	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:417)
 	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
@@ -839,397 +233,26 @@ org.eclipse.core.internal.resources.ResourceException: A resource exists on disk
 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
 	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
 	at org.eclipse.jface.window.Window.open(Window.java:794)
-	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:115)
-	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-!SUBENTRY 1 org.eclipse.core.resources 4 275 2018-07-29 07:49:01.954
-!MESSAGE A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-
-!ENTRY org.eclipse.cdt.ui 4 4 2018-07-29 07:49:13.202
-!MESSAGE Error
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:65)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
-	at org.eclipse.cdt.core.CCorePlugin$2.run(CCorePlugin.java:966)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:961)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:956)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.createIProject(CDTCommonProjectWizard.java:322)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1$1.run(CDTCommonProjectWizard.java:257)
-	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1.run(CDTCommonProjectWizard.java:268)
-	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:58)
-	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:168)
-	at org.eclipse.ui.internal.UISynchronizer.lambda$0(UISynchronizer.java:150)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.invokeRunnable(CDTCommonProjectWizard.java:177)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.getProject(CDTCommonProjectWizard.java:155)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.performFinish(CDTCommonProjectWizard.java:193)
-	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:778)
-	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:417)
-	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
-	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
-	at org.eclipse.jface.window.Window.open(Window.java:794)
-	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:115)
-	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-!SUBENTRY 1 org.eclipse.core.resources 4 275 2018-07-29 07:49:13.202
-!MESSAGE A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-
-!ENTRY org.eclipse.cdt.ui 4 4 2018-07-29 08:37:00.254
-!MESSAGE Error
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:65)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
-	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
-	at org.eclipse.cdt.core.CCorePlugin$2.run(CCorePlugin.java:966)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:961)
-	at org.eclipse.cdt.core.CCorePlugin.createCDTProject(CCorePlugin.java:956)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.createIProject(CDTCommonProjectWizard.java:322)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1$1.run(CDTCommonProjectWizard.java:257)
-	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
-	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard$1$1.run(CDTCommonProjectWizard.java:268)
-	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:58)
-	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:168)
-	at org.eclipse.ui.internal.UISynchronizer.lambda$0(UISynchronizer.java:150)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:165)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
-	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:980)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.invokeRunnable(CDTCommonProjectWizard.java:177)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.getProject(CDTCommonProjectWizard.java:155)
-	at org.eclipse.cdt.ui.wizards.CDTCommonProjectWizard.performFinish(CDTCommonProjectWizard.java:193)
-	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:778)
-	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:417)
-	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
-	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:81)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
-	at org.eclipse.jface.window.Window.open(Window.java:794)
-	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:115)
-	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-!SUBENTRY 1 org.eclipse.core.resources 4 275 2018-07-29 08:37:00.254
-!MESSAGE A resource exists on disk with a different case: 'C:\Users\admin\workspace_v8\learnTIVA'.
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-29 08:38:35.051
-!MESSAGE Indexed 'leanTIVA' (2 sources, 0 headers) in 0.093 sec: 24 declarations; 118 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (1.4%)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-29 08:38:56.999
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-29 08:38:57.018
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-!SESSION 2018-07-30 09:51:22.269 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-30 09:51:26.929
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY com.ti.common.core 4 0 2018-07-30 09:51:27.284
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-07-30 09:51:27.299
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.core.resources 4 567 2018-07-30 09:51:28.362
-!MESSAGE Workspace restored, but some problems occurred.
-!SUBENTRY 1 org.eclipse.core.resources 4 567 2018-07-30 09:51:28.362
-!MESSAGE Could not read metadata for 'leanTIVA'.
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'leanTIVA' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:901)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:904)
-	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:884)
-	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:735)
-	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1587)
-	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2399)
-	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2156)
-	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:467)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:933)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
-	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
-	at org.eclipse.osgi.container.Module.start(Module.java:449)
-	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
-	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
-	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:368)
-	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:442)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-!SUBENTRY 2 org.eclipse.core.resources 4 567 2018-07-30 09:51:28.377
-!MESSAGE The project description file (.project) for 'leanTIVA' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 09:52:12.659
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 09:52:12.800
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 09:52:12.816
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.debug.server 4 214294189 2018-07-30 09:52:17.775
-!MESSAGE Unexpected CCS exit detected [29/7/18 7:20 AM]!!!
-
-!ENTRY org.eclipse.core.resources 4 567 2018-07-30 09:52:28.889
-!MESSAGE The project description file (.project) for 'leanTIVA' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-07-30 09:53:01.369
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-07-30 09:53:01.369
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-07-30 09:53:01.369
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-07-30 09:53:01.369
-!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:53:15.678
-!MESSAGE Indexed 'SSL_Controller_V2.1' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.core.resources 2 2 2018-07-30 09:53:15.985
-!MESSAGE Save operation warnings.
-!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-07-30 09:53:15.985
-!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
-
-!ENTRY org.eclipse.ui 4 4 2018-07-30 09:53:26.798
-!MESSAGE Unable to create part
-!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2018-07-30 09:53:26.798
-!MESSAGE Cannot determine URI for '/SSL_Controller_V2.0/Peripherals/i2c.c'.
-!STACK 1
-org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SSL_Controller_V2.0/Peripherals/i2c.c'.
-	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:236)
-	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:560)
-	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.createFileInfo(CDocumentProvider.java:791)
-	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
-	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.connect(CDocumentProvider.java:723)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4178)
-	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:257)
-	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1466)
-	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:150)
-	at org.eclipse.cdt.internal.ui.editor.CEditor.internalDoSetInput(CEditor.java:1440)
-	at org.eclipse.cdt.internal.ui.editor.CEditor.doSetInput(CEditor.java:1405)
-	at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:3154)
-	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
-	at org.eclipse.ui.internal.WorkbenchWindow$14.run(WorkbenchWindow.java:2195)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2191)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3172)
-	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3197)
-	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:362)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:333)
+	at org.eclipse.ui.internal.handlers.WizardHandler$Import.executeHandler(WizardHandler.java:158)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:290)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:955)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:124)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:399)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:318)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
-	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.widgetSelected(StackRenderer.java:1053)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
-	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
-	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3175)
-	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1858)
-	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:328)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:390)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:151)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:565)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:397)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
@@ -1256,180 +279,83 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/SSL_Controlle
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2018-07-30 09:53:26.798
-!MESSAGE Cannot determine URI for '/SSL_Controller_V2.0/Peripherals/i2c.c'.
-
-!ENTRY com.ti.ccstudio.ui 4 0 2018-07-30 09:53:26.829
-!MESSAGE Exception during context menu override initialization for part i2c.c
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.internal.ui.contribution.filters.PartContributionFilter.handlePartOpened(PartContributionFilter.java:147)
-	at com.ti.ccstudio.ui.internal.decorations.DecorationManager$PartListener.partOpened(DecorationManager.java:217)
-	at org.eclipse.ui.internal.PartService$10.run(PartService.java:191)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.PartService.partOpened(PartService.java:188)
-	at org.eclipse.ui.internal.WorkbenchPage$23.run(WorkbenchPage.java:5106)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.WorkbenchPage.firePartOpened(WorkbenchPage.java:5103)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.lambda$1(CompatibilityPart.java:119)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
-	at org.eclipse.e4.ui.model.application.ui.basic.impl.PartImpl.setObject(PartImpl.java:422)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:130)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
-	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$3.widgetSelected(StackRenderer.java:1053)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
-	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
-	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3175)
-	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1858)
-	at org.eclipse.swt.custom.CTabFolder.lambda$0(CTabFolder.java:328)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+Caused by: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.getActiveWindowService(ApplicationPartServiceImpl.java:46)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:90)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.unzoom(MinMaxAddon.java:902)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:393)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 73 more
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:54:03.033
-!MESSAGE Indexed 'Trial' (2 sources, 0 headers) in 0.094 sec: 24 declarations; 118 references; 1 unresolved inclusions; 0 syntax errors; 2 unresolved names (1.4%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:06.072
+!MESSAGE Indexed 'ModBus_Serial_Slave' (1 sources, 3 headers) in 0.602 sec: 20 declarations; 122 references; 5 unresolved inclusions; 3 syntax errors; 91 unresolved names (39%)
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-30 09:54:31.629
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\Trial\Debug\Trial.out Could not open file
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:06.896
+!MESSAGE Indexed 'tivac_EK-LM4F120XL_core' (0 sources, 0 headers) in 0.807 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-03 12:57:07.140
+!MESSAGE Indexed 'tivac_EK-LM4F120XL_ModbusSerial' (1 sources, 2 headers) in 0.221 sec: 163 declarations; 144 references; 2 unresolved inclusions; 0 syntax errors; 116 unresolved names (27%)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2018-07-30 09:54:42.852
-!MESSAGE HTTP Server 'Internal Error': http://support.spectrumdigital.com/ccs51/Updates/content.xml
+!ENTRY org.eclipse.ui 2 2 2018-08-03 12:57:16.190
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2018-08-03 12:57:55.448
+!MESSAGE HTTP Request Timeout: http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/artifacts.jar
 !STACK 1
-org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 500.
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: HttpComponents connection error response code 408.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:667)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:146)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:424)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:360)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:402)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:259)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.getLocalFile(SimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepositoryFactory.load(SimpleArtifactRepositoryFactory.java:76)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at com.ti.ccstudio.p2app.DirectorApplication.initializeRepositories(DirectorApplication.java:748)
+	at com.ti.ccstudio.p2app.DirectorApplication.run(DirectorApplication.java:1389)
+	at com.ti.ccstudio.p2app.DirectorApplication.listIUsFoundInRepos(DirectorApplication.java:1775)
+	at com.ti.ccstudio.app.center.p2.DirectorApplicationDelegate.listIUsFoundInRepos(DirectorApplicationDelegate.java:40)
+	at com.ti.ccstudio.app.center.p2.DirectorApplicationDelegate.resolveIU(DirectorApplicationDelegate.java:72)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:397)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:364)
+	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:240)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2018-07-30 09:54:42.852
-!MESSAGE HttpComponents connection error response code 500.
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2018-08-03 12:57:55.450
+!MESSAGE HttpComponents connection error response code 408.
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-30 09:55:15.844
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\Trial\Debug\Trial.out Could not open file
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 14:59:34.222
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
 
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:58:30.647
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_Modbus' (1 sources, 1 headers) in 0.203 sec: 207 declarations; 445 references; 1 unresolved inclusions; 0 syntax errors; 182 unresolved names (22%)
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 14:59:34.251
+!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:58:31.616
-!MESSAGE Indexed 'ModBus_Serial_Slave' (1 sources, 6 headers) in 0.125 sec: 148 declarations; 50 references; 4 unresolved inclusions; 3 syntax errors; 89 unresolved names (31%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:58:32.987
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_core' (20 sources, 96 headers) in 1.37 sec: 6,375 declarations; 8,527 references; 101 unresolved inclusions; 8 syntax errors; 887 unresolved names (5.6%)
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 15:58:23.642
+!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 09:58:33.058
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_ModbusSerial' (1 sources, 2 headers) in 0.055 sec: 163 declarations; 155 references; 2 unresolved inclusions; 0 syntax errors; 116 unresolved names (27%)
 
-!ENTRY org.eclipse.launchbar.core 4 0 2018-07-30 10:03:36.548
-!MESSAGE 
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.cdt.debug.internal.core.launch.CoreBuildLaunchDescriptorType.getDescriptor(CoreBuildLaunchDescriptorType.java:28)
-	at org.eclipse.launchbar.core.internal.LaunchBarManager.launchObjectAdded(LaunchBarManager.java:349)
-	at org.eclipse.launchbar.core.internal.LaunchBarManager.launchObjectChanged(LaunchBarManager.java:386)
-	at org.eclipse.launchbar.core.internal.ProjectLaunchObjectProvider$1.visit(ProjectLaunchObjectProvider.java:68)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at org.eclipse.launchbar.core.internal.ProjectLaunchObjectProvider.resourceChanged(ProjectLaunchObjectProvider.java:53)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
-	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1565)
-	at org.eclipse.rse.internal.files.ui.resources.SystemRemoteEditManager.refreshRemoteEditProject(SystemRemoteEditManager.java:794)
-	at org.eclipse.rse.internal.files.ui.Activator.stop(Activator.java:182)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:835)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:828)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:947)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1675)
-	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1594)
-	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
-	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
-	at org.eclipse.osgi.container.Module.stop(Module.java:498)
-	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
-	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
-	at java.lang.Thread.run(Thread.java:745)
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 16:07:07.660
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-30 10:03:36.751
-!MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2018-07-30 10:03:43.145 -----------------------------------------------
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 16:07:07.757
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.
+!SESSION 2018-08-03 16:07:45.162 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180301-0715
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
@@ -1437,560 +363,49 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
 Framework arguments:  -product com.ti.ccstudio.branding.product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
 
-!ENTRY org.eclipse.core.resources 2 10035 2018-07-30 10:03:44.702
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY com.ti.common.core 4 0 2018-07-30 10:03:44.749
+!ENTRY com.ti.common.core 4 0 2018-08-03 16:07:46.869
 !MESSAGE path=ccs_base/DebugServer
 
-!ENTRY com.ti.common.core 4 0 2018-07-30 10:03:44.749
+!ENTRY com.ti.common.core 4 0 2018-08-03 16:07:46.916
 !MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 10:03:48.750
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 16:07:57.849
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 10:03:48.828
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 16:07:57.959
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 10:03:48.875
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-03 16:07:58.006
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-30 10:05:15.623
-!MESSAGE Connection to http://support.spectrumdigital.com/ccs51/Updates/p2.index failed on support.spectrumdigital.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: support.spectrumdigital.com
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2018-07-30 10:05:15.882
-!MESSAGE Unknown Host: http://support.spectrumdigital.com/ccs51/Updates/content.xml
-!STACK 0
-java.net.UnknownHostException: support.spectrumdigital.com
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.jface 2 0 2018-07-30 10:20:06.008
-!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
-!STACK 0
-java.lang.RuntimeException
-	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:761)
-	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:528)
-	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:346)
-	at org.eclipse.ui.navigator.CommonViewer.refresh(CommonViewer.java:492)
-	at org.eclipse.cdt.ui.CElementContentProvider$RefreshElement.refresh(CElementContentProvider.java:367)
-	at org.eclipse.cdt.ui.CElementContentProvider$1.run(CElementContentProvider.java:452)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4213)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3820)
-	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.runEventLoop(EventLoopProgressMonitor.java:125)
-	at org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor.isCanceled(EventLoopProgressMonitor.java:99)
-	at org.eclipse.core.internal.jobs.ThreadJob.isCanceled(ThreadJob.java:144)
-	at org.eclipse.core.internal.jobs.ThreadJob.waitForRun(ThreadJob.java:273)
-	at org.eclipse.core.internal.jobs.ThreadJob.joinRun(ThreadJob.java:202)
-	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:92)
-	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:308)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:469)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.runWspModification(CProjectDescriptionManager.java:443)
-	at org.eclipse.cdt.internal.core.settings.model.CExternalSettingsManager.settingsChanged(CExternalSettingsManager.java:439)
-	at org.eclipse.cdt.internal.core.settings.model.CExternalSettingContainerFactoryWithListener.notifySettingsChange(CExternalSettingContainerFactoryWithListener.java:47)
-	at org.eclipse.cdt.internal.core.settings.model.CfgExportSettingContainerFactory.handleEvent(CfgExportSettingContainerFactory.java:253)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.notifyListeners(CProjectDescriptionManager.java:2180)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.fireLoadedEvent(AbstractCProjectDescriptionStorage.java:268)
-	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:264)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
-	at org.eclipse.cdt.internal.core.CConfigBasedDescriptorManager.findDescriptor(CConfigBasedDescriptorManager.java:348)
-	at org.eclipse.cdt.internal.core.CConfigBasedDescriptorManager.getDescriptor(CConfigBasedDescriptorManager.java:241)
-	at org.eclipse.cdt.core.CCorePlugin.getCProjectDescription(CCorePlugin.java:879)
-	at org.eclipse.cdt.make.internal.core.ProjectTargets.<init>(ProjectTargets.java:71)
-	at org.eclipse.cdt.make.internal.core.MakeTargetManager.readTargets(MakeTargetManager.java:309)
-	at org.eclipse.cdt.make.internal.core.MakeTargetManager.getTargets(MakeTargetManager.java:156)
-	at org.eclipse.cdt.make.internal.ui.MakeNavContentProvider.getContainer(MakeNavContentProvider.java:59)
-	at org.eclipse.cdt.make.internal.ui.MakeNavContentProvider.getChildren(MakeNavContentProvider.java:47)
-	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:95)
-	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:241)
-	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:93)
-	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:157)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:143)
-	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:129)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1356)
-	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:341)
-	at org.eclipse.jface.viewers.StructuredViewer.getFilteredChildren(StructuredViewer.java:901)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:618)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$0(AbstractTreeViewer.java:812)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:792)
-	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:595)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:763)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.handleTreeExpand(AbstractTreeViewer.java:1482)
-	at org.eclipse.jface.viewers.TreeViewer.handleTreeExpand(TreeViewer.java:880)
-	at org.eclipse.jface.viewers.AbstractTreeViewer$3.treeExpanded(AbstractTreeViewer.java:1494)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:133)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
-	at org.eclipse.swt.widgets.Tree.wmNotifyChild(Tree.java:7819)
-	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5869)
-	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:2025)
-	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5423)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4899)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5178)
-	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2454)
-	at org.eclipse.swt.widgets.Tree.callWindowProc(Tree.java:1555)
-	at org.eclipse.swt.widgets.Tree.WM_LBUTTONDOWN(Tree.java:6673)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4879)
-	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:6188)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5178)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2560)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3815)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-30 10:22:06.404
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 16:12:58.905
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
 
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 10:27:08.835
-!MESSAGE Indexed 'ModBus_Serial_Slave' (1 sources, 3 headers) in 0.037 sec: 13 declarations; 33 references; 3 unresolved inclusions; 3 syntax errors; 23 unresolved names (33%)
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 16:12:58.936
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 10:27:08.888
-!MESSAGE Indexed 'tivac_EK-TM4C123GXL_ModbusSerial' (0 sources, 0 headers) in 0.041 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 10:27:08.925
-!MESSAGE Indexed 'tivac_EK-TM4C123GXL_Modbus' (0 sources, 0 headers) in 0.029 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-30 10:27:09.578
-!MESSAGE Indexed 'tivac_EK-TM4C123GXL_core' (0 sources, 0 headers) in 0.643 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-!SESSION 2018-07-30 15:04:00.625 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 4 0 2018-07-30 15:04:07.546
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-07-30 15:04:07.639
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 20:35:23.576
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 20:35:23.845
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-30 20:35:24.051
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.debug.server 4 214294189 2018-07-30 20:35:30.401
-!MESSAGE Unexpected CCS exit detected [30/7/18 10:03 AM]!!!
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-30 21:50:17.716
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
-
-!SESSION 2018-07-31 11:18:43.795 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 4 0 2018-07-31 11:18:54.080
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-07-31 11:18:54.155
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 11:20:36.059
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 11:20:36.126
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 11:20:36.138
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.app.center 4 0 2018-07-31 11:20:54.732
-!MESSAGE Unable to read http://software-dl.ti.com/ccs/non-esd/ccs_appcenter/apps_8.1.0.json file.
-!STACK 0
-java.net.SocketTimeoutException: connect timed out
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:178)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1202)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:966)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1546)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
-	at java.net.URL.openStream(URL.java:1045)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.readFile(CCSAppCenter.java:196)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.getAppJson_0(CCSAppCenter.java:212)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$1(CCSAppCenter.java:211)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter$1.run(CCSAppCenter.java:183)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-07-31 11:21:32.017
-!MESSAGE Connection to http://software-dl.ti.com/ccs/esd/CCSv8/Updates/p2.index failed on Connection timed out: connect. Retry attempt 0 started
-!STACK 0
-java.net.ConnectException: Connection timed out: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 12:20:07.709
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 18:38:00.886
 !MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
 
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 12:20:07.739
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 18:38:00.933
 !MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
 
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 12:37:28.079
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 18:51:11.638
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
 
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 12:42:24.904
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 18:51:11.779
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.
 
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 19:24:18.745
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-31 13:23:15.546
-!MESSAGE Indexed 'tivac_EK-TM4C123GXL_Wire' (1 sources, 38 headers) in 0.569 sec: 1,889 declarations; 2,782 references; 24 unresolved inclusions; 4 syntax errors; 241 unresolved names (4.9%)
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 15:43:52.671
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\Trial\Debug\Trial.out Could not open file
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 15:48:57.083
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\Trial\Debug\Trial.out Could not open file
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:17:59.147
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:17:59.168
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:18:01.345
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:18:01.359
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:18:04.352
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:18:04.374
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-07-31 16:21:15.331
-!MESSAGE Indexed 'Trial2' (12 sources, 42 headers) in 2.04 sec: 3,351 declarations; 12,244 references; 1 unresolved inclusions; 5 syntax errors; 2,923 unresolved names (16%)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:33:25.744
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:33:25.765
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:36:31.260
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 16:36:31.286
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 19:00:04.247
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 19:00:04.261
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 19:17:20.784
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-07-31 19:17:20.817
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-!SESSION 2018-07-31 19:49:31.071 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 4 0 2018-07-31 19:49:33.064
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-07-31 19:49:33.274
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 19:49:43.389
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 19:49:43.467
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-07-31 19:49:43.561
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.core.resources 2 566 2018-08-01 10:46:00.011
-!MESSAGE null parent found while collapsing trees
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 11:02:38.703
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 11:02:38.721
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 11:22:48.199
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 11:22:48.288
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 11:49:43.002
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 12:46:53.746
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-01 12:46:53.766
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-!SESSION 2018-08-02 11:15:36.836 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY org.eclipse.core.resources 2 10035 2018-08-02 11:15:47.264
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY com.ti.common.core 4 0 2018-08-02 11:15:48.267
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-08-02 11:15:48.314
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.485
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.579
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-02 11:17:14.595
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.debug.server 4 214294189 2018-08-02 11:17:22.802
-!MESSAGE Unexpected CCS exit detected [31/7/18 7:49 PM]!!!
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 13:16:33.568
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 13:16:33.578
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:05.468
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:05.482
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:11.512
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:11.527
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:14.715
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:14.715
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.149
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.165
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.424
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.437
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.684
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:15.715
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:19.620
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Debug Port error occurred.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 16:30:19.636
-!MESSAGE DS_ERROR: CORTEX_M4_0: Trouble Halting Target CPU 
-
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:20:35.907
-!MESSAGE Indexed 'SSL_Controller_V2' (12 sources, 42 headers) in 3.08 sec: 3,375 declarations; 13,652 references; 7 unresolved inclusions; 1 syntax errors; 1,446 unresolved names (7.8%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:21:51.574
-!MESSAGE Indexed 'SSL_Controller_Original (dont modify)' (12 sources, 42 headers) in 1.58 sec: 3,351 declarations; 12,244 references; 1 unresolved inclusions; 5 syntax errors; 2,923 unresolved names (16%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:22:48.988
-!MESSAGE Indexed 'SSLV2.1 (use for deployment)' (1 sources, 20 headers) in 0.401 sec: 344 declarations; 728 references; 7 unresolved inclusions; 9 syntax errors; 173 unresolved names (14%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-02 17:24:08.418
-!MESSAGE Indexed 'ModBus_SSL_Test' (1 sources, 3 headers) in 0.116 sec: 40 declarations; 189 references; 4 unresolved inclusions; 3 syntax errors; 92 unresolved names (29%)
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:36:32.624
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:36:32.637
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:48:02.351
-!MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:48:02.363
-!MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
-
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-02 18:51:06.011
-!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Target must be connected before calling the function
-
-
-!ENTRY org.eclipse.cdt.dsf 4 10005 2018-08-02 18:51:06.030
-!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@195d63): Status ERROR: com.ti.ccstudio.debug code=20003 Target must be connected before calling the function null' resulted in an error.
-!SUBENTRY 1 com.ti.ccstudio.debug 4 20003 2018-08-02 18:51:06.030
-!MESSAGE Target must be connected before calling the function
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-03 19:24:18.886
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.

@@ -1,1 +1,0 @@
-"./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./Peripherals/adc.obj" "./Peripherals/cpu.obj" "./Peripherals/gpio.obj" "./Peripherals/i2c.obj" "./Peripherals/interrupt.obj" "./Peripherals/pwm.obj" "./Peripherals/sysctl.obj" "./Peripherals/timer.obj" "./Peripherals/uart.obj" "./Peripherals/uartstdio.obj" "../tm4c123gh6pm.cmd" -llibc.a 

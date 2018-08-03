@@ -1,2 +1,2 @@
-DEFAULT_CCS_TARGET_CONFIGURATION=C\:\\Users\\admin\\workspace_v8\\SSL_Controller_V2.0\\targetConfigs\\Tiva TM4C123GH6PM.ccxml
+DEFAULT_CCS_TARGET_CONFIGURATION=C\:\\Users\\admin\\workspace_v8\\ModBus_Serial_Slave\\targetConfigs\\Tiva TM4C123GH6PM.ccxml
 eclipse.preferences.version=1

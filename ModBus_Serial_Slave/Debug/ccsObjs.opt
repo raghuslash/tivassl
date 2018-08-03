@@ -1,0 +1,1 @@
+"./ModBus_Serial_Slave.o" -Wl,--start-group -Wl,-T"C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/variants/EK-TM4C123GXL/lm4fcpp_blizzard.ld" -ltivac_EK-LM4F120XL_vlcfunctions -ltivac_EK-LM4F120XL_Wire -ltivac_EK-LM4F120XL_ModbusSerial -ltivac_EK-LM4F120XL_Modbus -ltivac_EK-LM4F120XL_core -ldriverlib -lm -lc -lgcc -Wl,--end-group 
