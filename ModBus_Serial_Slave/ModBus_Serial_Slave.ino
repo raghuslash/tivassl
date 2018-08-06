@@ -10,12 +10,18 @@
 #include <vlcfunctions.h>
 
 
-//#include "inc/hw_ints.h"
-//#include "inc/hw_timer.h"
-//#include "driverlib/rom.h"
-//#include "driverlib/rom_map.h"
-//#include "driverlib/sysctl.h"
-//#include "driverlib/timer.h"
+#include "wiring_private.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "inc/hw_timer.h"
+#include "inc/hw_ints.h"
+#include "driverlib/adc.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/timer.h"
+
 
 
 #define PRINTREGISTERS
@@ -169,7 +175,7 @@ void loop() {
 
     if(modbus_data_available())
     {
-        analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF
+        analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
 
         modbus.task();
 

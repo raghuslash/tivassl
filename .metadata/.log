@@ -431,3 +431,23 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 
 !ENTRY org.eclipse.launchbar.core 2 0 2018-08-06 11:29:47.028
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-06 12:50:38.963
+!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-06 12:51:49.075
+!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-06 12:52:36.223
+!MESSAGE DS_ERROR: CORTEX_M4_0: GEL: Encountered a problem loading file: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\Debug\ModBus_Serial_Slave.out Could not open file
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-06 13:58:12.025
+!MESSAGE DS_ERROR: CORTEX_M4_0: Error connecting to the target: Unable to communicate with the device. Please check your connection.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-06 13:58:12.229
+!MESSAGE DS_ERROR: Error connecting to the target:
+Unable to communicate with the device. Please check your connection.

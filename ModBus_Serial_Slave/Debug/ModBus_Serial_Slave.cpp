@@ -13,11 +13,17 @@
 #include <vlcfunctions.h>
 
 
-
-
-
-
-
+#include "wiring_private.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "inc/hw_timer.h"
+#include "inc/hw_ints.h"
+#include "driverlib/adc.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/pin_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/timer.h"
 
 
 
@@ -35,7 +41,7 @@ void setup();
 void loop();
 void led_brightness(int b);
 
-#line 30
+#line 36
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -179,7 +185,7 @@ void loop() {
     if(modbus_data_available())
     {
         analogWrite(VLC_MODULATION_PIN, 44);    
-
+        while(1);
         modbus.task();
 
         sendVLC=modbus.Coil(VLC_ON_COIL);

@@ -30,7 +30,12 @@ ModBus_Serial_Slave.o: ModBus_Serial_Slave.cpp \
  C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/libraries/Wire/Wire.h \
  C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/Stream.h \
  C:/Users/admin/Documents/Energia/libraries/vlcfunctions/vlcfunctions.h \
- C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/arduino.h
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/arduino.h \
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/wiring_private.h \
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/inc/hw_timer.h \
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/inc/hw_ints.h \
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib/sysctl.h \
+ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib/timer.h
 
 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/Energia.h:
 
@@ -95,3 +100,13 @@ C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cor
 C:/Users/admin/Documents/Energia/libraries/vlcfunctions/vlcfunctions.h:
 
 C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/arduino.h:
+
+C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/cores/tivac/wiring_private.h:
+
+C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/inc/hw_timer.h:
+
+C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/inc/hw_ints.h:
+
+C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib/sysctl.h:
+
+C:/Users/admin/AppData/Local/Energia15/packages/energia/hardware/tivac/1.0.3/system/driverlib/timer.h:
