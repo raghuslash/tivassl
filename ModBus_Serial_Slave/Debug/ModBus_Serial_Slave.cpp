@@ -13,20 +13,6 @@
 #include <vlcfunctions.h>
 
 
-#include "wiring_private.h"
-#include "inc/hw_memmap.h"
-#include "inc/hw_types.h"
-#include "inc/hw_timer.h"
-#include "inc/hw_ints.h"
-#include "driverlib/adc.h"
-#include "driverlib/gpio.h"
-#include "driverlib/sysctl.h"
-#include "driverlib/pin_map.h"
-#include "driverlib/rom.h"
-#include "driverlib/timer.h"
-
-
-
 #define PRINTREGISTERS
 
 
@@ -41,7 +27,7 @@ void setup();
 void loop();
 void led_brightness(int b);
 
-#line 36
+#line 22
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -69,7 +55,7 @@ unsigned long inc_time = 0;
 #define BRIGHTNESS_H 2000
 #define CHIP_TEMP_H 3000
 
-#define VLC_ON_COIL 1000        
+#define VLC_ON_COIL 1000       
 
 
 
@@ -92,18 +78,14 @@ bool sendVLC=true;
 
 
 
-HardwareSerial* ModbusSerialPort = &Serial;
+HardwareSerial* ModbusSerialPort = &Serial1;                    
 int modbus_data_available()
 {
     return ModbusSerialPort->available();
 }
 
 void setup() {
-
-
-
-  
-  modbus.config(ModbusSerialPort, BAUD, TXPIN); 
+  modbus.config(ModbusSerialPort, BAUD, TXPIN);
 
   
   modbus.setSlaveId(ID);
@@ -142,7 +124,7 @@ void setup() {
   modbus.addCoil(VLC_ON_COIL, sendVLC);
 
   for(int i=VLC_STR_LEN; i<(VLC_STR_LEN+VLC_START_H); i++)
-      modbus.addHreg(i, '\0');
+  modbus.addHreg(i, '\0');
   
   modbus.Hreg(1000, 'c');
   modbus.Hreg(1001, 'p');
@@ -182,10 +164,10 @@ void setup() {
 
 void loop() {
 
+
     if(modbus_data_available())
-    {
+    {   pinMode(VLC_MODULATION_PIN, OUTPUT);
         analogWrite(VLC_MODULATION_PIN, 44);    
-        while(1);
         modbus.task();
 
         sendVLC=modbus.Coil(VLC_ON_COIL);

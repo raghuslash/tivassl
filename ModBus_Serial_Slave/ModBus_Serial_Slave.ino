@@ -10,26 +10,12 @@
 #include <vlcfunctions.h>
 
 
-#include "wiring_private.h"
-#include "inc/hw_memmap.h"
-#include "inc/hw_types.h"
-#include "inc/hw_timer.h"
-#include "inc/hw_ints.h"
-#include "driverlib/adc.h"
-#include "driverlib/gpio.h"
-#include "driverlib/sysctl.h"
-#include "driverlib/pin_map.h"
-#include "driverlib/rom.h"
-#include "driverlib/timer.h"
-
-
-
 #define PRINTREGISTERS
 
 // ModBus Port information
 #define BAUD 19200
 #define ID 1                    //MODBUS SLAVE ID
-#define TXPIN 5                 //send/receive enable for RS485
+#define TXPIN 6                 //send/receive enable for MAX485
 #define VLC_STR_LEN 100         //MAX number of characters to send in VLC data.
 #define VLC_MODULATION_PIN 14   //PIN USED TO MODULATE VLC DATA
 
@@ -60,7 +46,7 @@ unsigned long inc_time = 0;
 #define BRIGHTNESS_H 2000
 #define CHIP_TEMP_H 3000
 
-#define VLC_ON_COIL 1000        //Enable to start VLC
+#define VLC_ON_COIL 1000       //Enable to start VLC
 
 
 
@@ -83,18 +69,14 @@ bool sendVLC=true;                    //Set to true to start VLC on startup
 
 
 
-HardwareSerial* ModbusSerialPort = &Serial;
+HardwareSerial* ModbusSerialPort = &Serial1;                    //Serial Port that MODBUS network connects to. **Change to Serial1 before deployment
 int modbus_data_available()
 {
     return ModbusSerialPort->available();
 }
 
 void setup() {
-//  pinMode(ledPin, OUTPUT);
-//  digitalWrite(ledPin, HIGH);
-
-  // Config Modbus Serial (port, speed, byte format)
-  modbus.config(ModbusSerialPort, BAUD, TXPIN); // Change to Serial1 before deployment
+  modbus.config(ModbusSerialPort, BAUD, TXPIN);// Config Modbus Serial (port, speed, byte format)
 
   // Set the Slave ID (1-247)
   modbus.setSlaveId(ID);
@@ -133,7 +115,7 @@ void setup() {
   modbus.addCoil(VLC_ON_COIL, sendVLC);
 
   for(int i=VLC_STR_LEN; i<(VLC_STR_LEN+VLC_START_H); i++)
-      modbus.addHreg(i, '\0');
+  modbus.addHreg(i, '\0');
   ///Initialize to send CPS
   modbus.Hreg(1000, 'c');
   modbus.Hreg(1001, 'p');
@@ -173,10 +155,10 @@ void setup() {
 
 void loop() {
 
-    if(modbus_data_available())
-    {
-        analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
 
+    if(modbus_data_available())
+    {   pinMode(VLC_MODULATION_PIN, OUTPUT);
+        analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
         modbus.task();
 
         sendVLC=modbus.Coil(VLC_ON_COIL);
