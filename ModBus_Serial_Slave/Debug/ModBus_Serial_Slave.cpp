@@ -4,7 +4,6 @@
 
 #include <Modbus.h>
 #include <ModbusSerial.h>
-
 #include <avr/pgmspace.h>
 #include "q3.h"
 #include "cl1.h"
@@ -17,8 +16,15 @@
 
 
 #define BAUD 19200
-#define ID 1                    
-#define TXPIN 5                 
+#define ID 1
+
+
+
+
+#define TXPIN 6                 
+#define REPIN 5                  
+
+
 #define VLC_STR_LEN 100         
 #define VLC_MODULATION_PIN 14   
 
@@ -27,7 +33,7 @@ void setup();
 void loop();
 void led_brightness(int b);
 
-#line 22
+#line 28
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -77,7 +83,6 @@ bool sendVLC=true;
 
 
 
-
 HardwareSerial* ModbusSerialPort = &Serial1;                    
 int modbus_data_available()
 {
@@ -85,6 +90,9 @@ int modbus_data_available()
 }
 
 void setup() {
+
+  
+
   modbus.config(ModbusSerialPort, BAUD, TXPIN);
 
   
@@ -166,7 +174,8 @@ void loop() {
 
 
     if(modbus_data_available())
-    {   pinMode(VLC_MODULATION_PIN, OUTPUT);
+    {
+        pinMode(VLC_MODULATION_PIN, OUTPUT);
         analogWrite(VLC_MODULATION_PIN, 44);    
         modbus.task();
 

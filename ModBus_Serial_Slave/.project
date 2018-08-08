@@ -3,11 +3,11 @@
 	<name>ModBus_Serial_Slave</name>
 	<comment></comment>
 	<projects>
-		<project>tivac_EK-LM4F120XL_core</project>
-		<project>tivac_EK-LM4F120XL_Modbus</project>
-		<project>tivac_EK-LM4F120XL_ModbusSerial</project>
-		<project>tivac_EK-LM4F120XL_Wire</project>
-		<project>tivac_EK-LM4F120XL_vlcfunctions</project>
+		<project>tivac_EK-TM4C123GXL_core</project>
+		<project>tivac_EK-TM4C123GXL_Modbus</project>
+		<project>tivac_EK-TM4C123GXL_ModbusSerial</project>
+		<project>tivac_EK-TM4C123GXL_Wire</project>
+		<project>tivac_EK-TM4C123GXL_vlcfunctions</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

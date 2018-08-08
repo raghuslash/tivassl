@@ -1,7 +1,6 @@
 
 #include <Modbus.h>
 #include <ModbusSerial.h>
-//#include "functions.h"
 #include <avr/pgmspace.h>
 #include "q3.h"
 #include "cl1.h"
@@ -14,8 +13,15 @@
 
 // ModBus Port information
 #define BAUD 19200
-#define ID 1                    //MODBUS SLAVE ID
-#define TXPIN 6                 //send/receive enable for MAX485
+#define ID 1
+//MODBUS SLAVE ID
+
+
+
+#define TXPIN 6                 //send/receive enable for MAX485  //
+#define REPIN 5                  //active low
+
+
 #define VLC_STR_LEN 100         //MAX number of characters to send in VLC data.
 #define VLC_MODULATION_PIN 14   //PIN USED TO MODULATE VLC DATA
 
@@ -68,7 +74,6 @@ bool sendVLC=true;                    //Set to true to start VLC on startup
 
 
 
-
 HardwareSerial* ModbusSerialPort = &Serial1;                    //Serial Port that MODBUS network connects to. **Change to Serial1 before deployment
 int modbus_data_available()
 {
@@ -76,6 +81,9 @@ int modbus_data_available()
 }
 
 void setup() {
+
+  // Enable ever receive
+
   modbus.config(ModbusSerialPort, BAUD, TXPIN);// Config Modbus Serial (port, speed, byte format)
 
   // Set the Slave ID (1-247)
@@ -157,7 +165,8 @@ void loop() {
 
 
     if(modbus_data_available())
-    {   pinMode(VLC_MODULATION_PIN, OUTPUT);
+    {
+        pinMode(VLC_MODULATION_PIN, OUTPUT);
         analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
         modbus.task();
 

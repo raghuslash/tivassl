@@ -5,6 +5,16 @@
 #include <Arduino.h>
 #include <Modbus.h>
 
+#ifndef MODBUSSERIAL_H
+#define MODBUSSERIAL_H
+
+//#define USE_SOFTWARE_SERIAL
+
+//#define DEBUG_MODE
+
+#ifdef USE_SOFTWARE_SERIAL
+#include <SoftwareSerial.h>
+#endif
 
 class ModbusSerial : public Modbus {
     private:
@@ -20,12 +30,24 @@ class ModbusSerial : public Modbus {
         ModbusSerial();
         bool setSlaveId(byte slaveId);
         byte getSlaveId();
-        bool task();
+        void task();
         bool receive(byte* frame);
         bool sendPDU(byte* pduframe);
         bool send(byte* frame);
 
         bool config(HardwareSerial* port, long baud, int txPin);
+
+        #ifdef DEBUG_MODE
+        bool config(HardwareSerial* port, HardwareSerial* DebugSerialPort, long baud, int txPin=-1);
+        #endif
+
+        #ifdef USE_SOFTWARE_SERIAL
+        bool config(SoftwareSerial* port, long baud, int txPin=-1);
+        #endif
+
+        #ifdef __AVR_ATmega32U4__
+        bool config(Serial_* port, long baud, int txPin=-1);
+        #endif
 };
 
 /* Table of CRC values for high�order byte */
@@ -69,3 +91,5 @@ const byte _auchCRCLo[] = {
 	0x48, 0x49, 0x89, 0x4B, 0x8B, 0x8A, 0x4A, 0x4E, 0x8E, 0x8F, 0x4F, 0x8D, 0x4D, 0x4C, 0x8C,
 	0x44, 0x84, 0x85, 0x45, 0x87, 0x47, 0x46, 0x86, 0x82, 0x42, 0x43, 0x83, 0x41, 0x81, 0x80,
 	0x40};
+
+#endif //MODBUSSERIAL_H

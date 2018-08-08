@@ -1,906 +1,4 @@
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:54:48.973
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:54:48.973
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'ModBus_Serial_Slave' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:54:49.139
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:54:49.139
-!MESSAGE The project description file (.project) for 'ModBus_Serial_Slave' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY com.ti.ccstudio.project.core 4 0 2018-08-07 13:54:49.145
-!MESSAGE An internal error was logged by 'com.ti.ccstudio.project.core'.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\admin\workspace_v8\ModBus_Serial_Slave\.ccsproject (Access is denied)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
-	at java.io.FileWriter.<init>(FileWriter.java:90)
-	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.saveSettings(CCSProjectSettings.java:740)
-	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.set(CCSProjectSettings.java:667)
-	at com.ti.ccstudio.project.core.internal.settings.CCSProjectSettings.setIsTargetConfigurationManual(CCSProjectSettings.java:386)
-	at com.ti.ccstudio.debug.launch.TargetConfigTracker$1.activeConfigFileChanged(TargetConfigTracker.java:51)
-	at com.ti.ccstudio.system.setup.internal.TargetConfigurationManager.setActiveTargetConfigurationProperty(TargetConfigurationManager.java:308)
-	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.setActiveConfiguration(TargetConfigurationDecorator.java:246)
-	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.setNextAvaliableConfiguration(TargetConfigurationDecorator.java:279)
-	at com.ti.ccstudio.system.setup.ui.TargetConfigurationDecorator.resourceRemoved(TargetConfigurationDecorator.java:341)
-	at com.ti.ccstudio.system.setup.ui.SystemSetupResourceMonitor.notifyRemoved(SystemSetupResourceMonitor.java:166)
-	at com.ti.ccstudio.system.setup.ui.SystemSetupResourceMonitor$1$1.run(SystemSetupResourceMonitor.java:82)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:54:54.728
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:54:54.728
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:54:54.931
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:54:54.931
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'tivac_EK-LM4F120XL_ModbusSerial' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:54:54.931
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:54:54.931
-!MESSAGE The project description file (.project) for 'tivac_EK-LM4F120XL_ModbusSerial' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:54:57.790
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:54:57.790
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:54:57.994
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:54:57.994
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:54:57.994
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:54:57.994
-!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:00.817
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:00.817
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:01.036
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:01.036
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'tivac_EK-LM4F120XL_Wire' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:55:01.036
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:55:01.036
-!MESSAGE The project description file (.project) for 'tivac_EK-LM4F120XL_Wire' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:03.849
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:03.849
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:04.379
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:04.379
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'TestSerialEcho' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:55:04.379
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:55:04.379
-!MESSAGE The project description file (.project) for 'TestSerialEcho' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.535
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.707
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.722
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.754
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.769
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.785
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.801
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.801
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.832
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.847
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.847
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.863
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.879
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.879
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.894
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.910
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.910
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.926
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.926
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.941
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.941
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.957
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.957
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.972
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.972
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.988
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:04.988
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY com.ti.common.project.core 4 0 2018-08-07 13:55:05.004
-!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.project.core.internal.ProjectStateListener.onResourceRemoved(ProjectStateListener.java:256)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$2.visit(ProjectStateMonitor.java:257)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:859)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:848)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:255)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
-	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:230)
-	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
-	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
-	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
-	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
-	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:232)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:06.860
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:06.860
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:07.079
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:07.079
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'tivac_EK-LM4F120XL_core' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:55:07.079
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:55:07.079
-!MESSAGE The project description file (.project) for 'tivac_EK-LM4F120XL_core' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:09.892
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:09.892
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:10.095
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:10.095
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'tivac_EK-LM4F120XL_Modbus' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:55:10.095
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:55:10.095
-!MESSAGE The project description file (.project) for 'tivac_EK-LM4F120XL_Modbus' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:12.913
-!MESSAGE Problems occurred refreshing resources
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:12.913
-!MESSAGE Problem finding next change, code: 5
-
-!ENTRY org.eclipse.core.resources 4 1 2018-08-07 13:55:13.129
-!MESSAGE Problems occurred while refreshing local changes
-!SUBENTRY 1 org.eclipse.core.resources 4 1 2018-08-07 13:55:13.129
-!MESSAGE Problems occurred while refreshing local changes
-!STACK 1
-org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:974)
-	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:954)
-	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1560)
-	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-Contains: The project description file (.project) for 'tivac_EK-LM4F120XL_vlcfunctions' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-!SUBENTRY 2 org.eclipse.core.resources 4 271 2018-08-07 13:55:13.129
-!MESSAGE Errors occurred while refreshing resources with the local file system.
-!SUBENTRY 3 org.eclipse.core.resources 4 567 2018-08-07 13:55:13.129
-!MESSAGE The project description file (.project) for 'tivac_EK-LM4F120XL_vlcfunctions' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
-
-!ENTRY org.eclipse.core.resources 4 566 2018-08-07 13:55:21.025
-!MESSAGE Could not save master table to file 'C:\Users\admin\workspace_v8\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak'.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\admin\workspace_v8\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1286)
-	at org.eclipse.core.internal.resources.SaveManager.cleanMasterTable(SaveManager.java:234)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1195)
-	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
-	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
-
-!ENTRY org.eclipse.ui.ide 4 4 2018-08-07 13:55:24.426
-!MESSAGE Problems saving workspace
-
-!ENTRY org.eclipse.ui.ide 4 1 2018-08-07 13:55:24.426
-!MESSAGE Problems occurred while trying to save the state of the workbench.
-!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-08-07 13:55:24.426
-!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\admin\workspace_v8\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers (The system cannot find the path specified)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
-	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1657)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1739)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1199)
-	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
-	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
-!SESSION 2018-08-07 14:07:11.986 -----------------------------------------------
+!SESSION 2018-08-08 14:37:24.740 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180301-0715
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
@@ -908,29 +6,147 @@ BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
 Framework arguments:  -product com.ti.ccstudio.branding.product
 Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
 
-!ENTRY com.ti.common.core 4 0 2018-08-07 14:07:20.669
+!ENTRY com.ti.common.core 4 0 2018-08-08 14:37:27.793
 !MESSAGE path=ccs_base/DebugServer
 
-!ENTRY com.ti.common.core 4 0 2018-08-07 14:07:20.685
+!ENTRY com.ti.common.core 4 0 2018-08-08 14:37:27.793
 !MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
 
-!ENTRY org.eclipse.equinox.app 4 2 2018-08-07 14:07:28.432
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.app".
+!ENTRY org.eclipse.equinox.event 4 0 2018-08-08 14:37:31.150
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@a2e2fb (elementId: org.eclipse.e4.primaryDataStack, tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@188486e, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@a2e2fb (elementId: org.eclipse.e4.primaryDataStack, tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@188486e, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {}, NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@1813f01
 !STACK 0
-org.eclipse.swt.SWTException: Widget is disposed
-	at org.eclipse.swt.SWT.error(SWT.java:4533)
-	at org.eclipse.swt.SWT.error(SWT.java:4448)
-	at org.eclipse.swt.SWT.error(SWT.java:4419)
-	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
-	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
-	at org.eclipse.swt.widgets.Shell.close(Shell.java:545)
-	at org.eclipse.ui.splash.AbstractSplashHandler.dispose(AbstractSplashHandler.java:63)
-	at org.eclipse.ui.splash.BasicSplashHandler.dispose(BasicSplashHandler.java:163)
-	at org.eclipse.ui.internal.Workbench$2$1.applicationRunning(Workbench.java:845)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle$1.run(EclipseAppHandle.java:268)
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:305)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:138)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:190)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:124)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:91)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:73)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1494)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1468)
+	at com.ti.ccstudio.debug.ui.targetStatus.TargetStatusManager.addStatusBar(TargetStatusManager.java:379)
+	at com.ti.ccstudio.debug.ui.targetStatus.statusBar.TargetStatusBar.fill(TargetStatusBar.java:44)
+	at com.ti.ccstudio.debug.ui.targetStatus.statusBar.CCSStatusBar.createControl(CCSStatusBar.java:39)
+	at org.eclipse.ui.menus.WorkbenchWindowControlContribution.delegateCreateControl(WorkbenchWindowControlContribution.java:105)
+	at org.eclipse.ui.internal.menus.CompatibilityWorkbenchWindowControlContribution.construct(CompatibilityWorkbenchWindowControlContribution.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:990)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:124)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:399)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:332)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:186)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlContribution.createControl(ToolControlContribution.java:56)
+	at org.eclipse.jface.action.ControlContribution.fill(ControlContribution.java:101)
+	at org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:343)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.subscribeTopicUpdateToBeRendered(ToolBarManagerRenderer.java:212)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:64)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4889)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:61)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:345)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord.updateVisibility(ToolBarContributionRecord.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer$2.changed(ToolBarManagerRenderer.java:478)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:114)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:337)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processAddition(ToolBarManagerRenderer.java:470)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.generateContributions(ToolBarManagerRenderer.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processContribution(ToolBarManagerRenderer.java:415)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.createWidget(ToolBarManagerRenderer.java:375)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:992)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:661)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.applicationRunning(EclipseAppHandle.java:258)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1085)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeChildrenHandler(PartRenderingEngine.java:305)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:88)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:343)
+	at org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.processAddition(ContributionsAnalyzer.java:435)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.addTrimContributions(TrimBarRenderer.java:164)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:136)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:546)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:530)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:726)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:738)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:732)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:716)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1076)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
@@ -951,71 +167,38 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:47)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:146)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:397)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:383)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.getActivePerspective(ModelServiceImpl.java:962)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:726)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:699)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:387)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 150 more
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:07:28.463
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-08 14:37:31.338
 !MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:07:28.525
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-08 14:37:31.400
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:07:28.541
+!ENTRY org.eclipse.launchbar.core 2 0 2018-08-08 14:37:31.479
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
 
-!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2018-08-07 14:08:08.162
-!MESSAGE Exception in update check thread
-!STACK 0
-org.eclipse.core.runtime.OperationCanceledException
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:125)
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:735)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:657)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
-	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
-	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
-	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
-	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
-	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
-	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:54.934
+!MESSAGE Indexed 'tivac_EK-TM4C123GXL_vlcfunctions' (0 sources, 0 headers) in 0.086 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.core.jobs 4 2 2018-08-07 14:08:08.177
-!MESSAGE An internal error occurred during: "Replace IU Job".
-!STACK 0
-java.lang.NullPointerException
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.log(CCSAppCenter.java:452)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter._replaceIusWithLatest(CCSAppCenter.java:420)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter.access$3(CCSAppCenter.java:364)
-	at com.ti.ccstudio.app.center.internal.CCSAppCenter$2.run(CCSAppCenter.java:240)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-!SESSION 2018-08-07 14:10:51.470 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:54.985
+!MESSAGE Indexed 'tivac_EK-TM4C123GXL_Wire' (0 sources, 0 headers) in 0.04 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.ti.common.core 4 0 2018-08-07 14:10:52.928
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-08-07 14:10:52.928
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:10:56.744
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:10:56.869
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 14:10:56.884
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.ui 4 0 2018-08-07 14:12:32.695
+!ENTRY org.eclipse.ui 4 0 2018-08-08 14:39:55.375
 !MESSAGE Unhandled event loop exception
 !STACK 0
 org.eclipse.e4.core.di.InjectionException: java.lang.IllegalStateException: Application does not have an active window
@@ -1099,56 +282,31 @@ Caused by: java.lang.IllegalStateException: Application does not have an active 
 	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:90)
 	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.unzoom(MinMaxAddon.java:902)
 	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:393)
-	at sun.reflect.GeneratedMethodAccessor35.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 73 more
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:40.208
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_Modbus' (1 sources, 1 headers) in 0.409 sec: 207 declarations; 445 references; 1 unresolved inclusions; 0 syntax errors; 182 unresolved names (22%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:55.659
+!MESSAGE Indexed 'ModBus_Serial_Slave' (1 sources, 3 headers) in 0.664 sec: 24 declarations; 131 references; 5 unresolved inclusions; 3 syntax errors; 103 unresolved names (40%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:40.614
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_vlcfunctions' (1 sources, 0 headers) in 0.045 sec: 24 declarations; 83 references; 1 unresolved inclusions; 0 syntax errors; 10 unresolved names (8.5%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:55.768
+!MESSAGE Indexed 'tivac_EK-TM4C123GXL_ModbusSerial' (0 sources, 0 headers) in 0.081 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:43.422
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_Wire' (1 sources, 37 headers) in 0.632 sec: 1,869 declarations; 2,882 references; 23 unresolved inclusions; 1 syntax errors; 277 unresolved names (5.5%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:56.222
+!MESSAGE Indexed 'tivac_EK-TM4C123GXL_Modbus' (1 sources, 1 headers) in 0.289 sec: 207 declarations; 445 references; 1 unresolved inclusions; 0 syntax errors; 182 unresolved names (22%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:43.643
-!MESSAGE Indexed 'ModBus_Serial_Slave' (1 sources, 21 headers) in 0.21 sec: 343 declarations; 676 references; 8 unresolved inclusions; 9 syntax errors; 172 unresolved names (14%)
+!ENTRY org.eclipse.cdt.core 1 0 2018-08-08 14:39:57.032
+!MESSAGE Indexed 'tivac_EK-TM4C123GXL_core' (0 sources, 0 headers) in 0.781 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:45.779
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_core' (20 sources, 96 headers) in 2.12 sec: 6,375 declarations; 8,527 references; 101 unresolved inclusions; 8 syntax errors; 887 unresolved names (5.6%)
+!ENTRY org.eclipse.ui 2 2 2018-08-08 14:40:40.644
+!MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
 
-!ENTRY org.eclipse.cdt.core 1 0 2018-08-07 14:12:45.843
-!MESSAGE Indexed 'tivac_EK-LM4F120XL_ModbusSerial' (1 sources, 2 headers) in 0.057 sec: 163 declarations; 144 references; 2 unresolved inclusions; 0 syntax errors; 116 unresolved names (27%)
-!SESSION 2018-08-07 16:01:48.183 -----------------------------------------------
-eclipse.buildId=4.7.3.M20180301-0715
-java.version=1.8.0_112
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
-Framework arguments:  -product com.ti.ccstudio.branding.product
-Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
-
-!ENTRY com.ti.common.core 4 0 2018-08-07 16:01:53.641
-!MESSAGE path=ccs_base/DebugServer
-
-!ENTRY com.ti.common.core 4 0 2018-08-07 16:01:53.745
-!MESSAGE debugServerDir=C:/ti/ccsv8/ccs_base/DebugServer
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 16:02:46.407
-!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 16:02:46.543
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY org.eclipse.launchbar.core 2 0 2018-08-07 16:02:46.553
-!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
-
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-07 16:04:00.564
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-08 14:42:01.245
 !MESSAGE DS_ERROR: CORTEX_M4_0: Error: Connection with the target was unexpectedly lost.
 
 
-!ENTRY com.ti.ccstudio.debug 1 0 2018-08-07 16:04:00.649
+!ENTRY com.ti.ccstudio.debug 1 0 2018-08-08 14:42:01.261
 !MESSAGE DS_ERROR: CORTEX_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
 
