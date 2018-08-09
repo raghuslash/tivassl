@@ -13,7 +13,25 @@ from pymodbus.client.sync import ModbusSerialClient as ModbusClient
 import sys
 import select
 
-mbclient= ModbusClient(method = "rtu", timeout=1, port='/dev/ttyUSB0',stopbits = 1, bytesize = 8, parity = 'N', baudrate = 9600)
+import serial.tools.list_ports
+
+portdetected = serial.tools.list_ports.comports()
+print (portdetected)
+
+portdetected = list(filter(lambda x: "USB" in x.name, portdetected))
+print (portdetected)
+
+if (len(portdetected)):
+  portdetected= portdetected[0].device
+  print ("Using port:",portdetected)
+else:
+  print("Serial port not found....Exiting")
+  exit()
+
+
+#portdetected= "/dev/ttyACM0"
+
+mbclient= ModbusClient(method = "rtu", timeout=1, port=portdetected, stopbits = 1, bytesize = 8, parity = 'N', baudrate = 19200)
 connection = mbclient.connect()
 print(connection)
 time.sleep(3)
