@@ -174,9 +174,12 @@ void loop() {
 
 
     if(modbus_data_available())
-    {
-        pinMode(VLC_MODULATION_PIN, OUTPUT);
-        analogWrite(VLC_MODULATION_PIN, 44);    
+    {   if(sendVLC)
+        {
+            pinMode(VLC_MODULATION_PIN, OUTPUT);
+            analogWrite(VLC_MODULATION_PIN, 44);    
+
+        }
         modbus.task();
 
         sendVLC=modbus.Coil(VLC_ON_COIL);

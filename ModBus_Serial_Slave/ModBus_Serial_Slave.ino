@@ -165,9 +165,12 @@ void loop() {
 
 
     if(modbus_data_available())
-    {
-        pinMode(VLC_MODULATION_PIN, OUTPUT);
-        analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
+    {   if(sendVLC)
+        {
+            pinMode(VLC_MODULATION_PIN, OUTPUT);
+            analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
+
+        }
         modbus.task();
 
         sendVLC=modbus.Coil(VLC_ON_COIL);
