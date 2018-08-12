@@ -84,7 +84,7 @@ void setup() {
 
   // Enable ever receive
 
-  modbus.config(ModbusSerialPort, BAUD, TXPIN);// Config Modbus Serial (port, speed, byte format)
+  modbus.config(ModbusSerialPort, BAUD, TXPIN);             // Config Modbus Serial (port, speed, byte format)
 
   // Set the Slave ID (1-247)
   modbus.setSlaveId(ID);
@@ -150,7 +150,8 @@ void setup() {
   Wire.write(data2[5], 2);
   Wire.endTransmission();
 
-  pinMode(VLC_MODULATION_PIN, OUTPUT);
+  pinMode(VLC_MODULATION_PIN, OUTPUT);          //100% brightness on startup
+  digitalWrite(VLC_MODULATION_PIN, LOW);
 
   interleaver(data, interout);
   manchester(data, interout, manout);
@@ -162,50 +163,69 @@ void setup() {
 
 
 void loop() {
-
+    pinMode(VLC_MODULATION_PIN, OUTPUT);                    //Reset Brightness to 100
+    digitalWrite(VLC_MODULATION_PIN, LOW);
 
     if(modbus_data_available())
-    {   if(sendVLC)
+    {
+
+    sendVLC=modbus.Coil(VLC_ON_COIL);
+    if(!sendVLC)                                            //Check if VLC is being sent
         {
-            pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 44);    //SETS TIME - LED IS OFF (Library is modified to 980Hz PWM Frequency for safety.)
+           pinMode(VLC_MODULATION_PIN, OUTPUT);
+           digitalWrite(VLC_MODULATION_PIN, LOW);          //LOW TO TURN LEDs ON
 
         }
-        modbus.task();
 
-        sendVLC=modbus.Coil(VLC_ON_COIL);
+    else
+    {
+        pinMode(VLC_MODULATION_PIN, OUTPUT);
+        analogWrite(VLC_MODULATION_PIN, 43);        //SETS TIME - LED IS OFF (Library has 490Hz PWM Frequency.)
+
+    }
+        modbus.task();
         //UPDATE BRIGHTNESS
         //UPDATE BRIGHTNESS OF LAMP
         int b=modbus.Hreg(BRIGHTNESS_H);
         led_brightness(b);
 
 
-      int i=0;                          //UPDATE VLC STRING
+      int i=0;                                      //UPDATE VLC STRING
 
       do{
           data[i]=char(modbus.Hreg(i+VLC_START_H));
           i++;
-      }while(modbus.Hreg(i)!=0);   //Read String from MODBUS Stack
+      }while(modbus.Hreg(i)!=0);                    //Read String from MODBUS Stack
+
       data[i]=0;
+
+
+      if (data[0]=='\0')
+         {sendVLC=0;                            // IF first char is NULL, Turn off VLC.
+          modbus.Coil(VLC_ON_COIL,0);           //Reset VLC status coil
+         }
       if (olddata!=data)
       {
 
-      interleaver(data, interout);
-      manchester(data, interout, manout);
-      foo(data, manout, final);
-      i=0;
-      while(data[i]!=0){
-            olddata[i]=data[i];
-            i++;
-      }
+          interleaver(data, interout);
+          manchester(data, interout, manout);
+          foo(data, manout, final);
+          i=0;
+          while(data[i]!=0){
+                olddata[i]=data[i];
+                i++;
+              }
       }
   }
 
   if(sendVLC)
   {
       pinMode(VLC_MODULATION_PIN, OUTPUT);
-      send_vlc_data(data, final, VLC_MODULATION_PIN);//SEND ENCODED VLC STRING
+      send_vlc_data(data, final, VLC_MODULATION_PIN);       //SEND ENCODED VLC STRING
   }
+  pinMode(VLC_MODULATION_PIN, OUTPUT);                    //Reset Brightness to 100
+  digitalWrite(VLC_MODULATION_PIN, LOW);
+
   if (millis() > update_time + 3000)
   {   update_time = millis();
       modbus.Ireg(LDR_IP, analogRead(LDR_PIN));

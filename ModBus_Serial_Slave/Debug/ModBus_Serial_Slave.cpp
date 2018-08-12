@@ -93,7 +93,7 @@ void setup() {
 
   
 
-  modbus.config(ModbusSerialPort, BAUD, TXPIN);
+  modbus.config(ModbusSerialPort, BAUD, TXPIN);             
 
   
   modbus.setSlaveId(ID);
@@ -159,7 +159,8 @@ void setup() {
   Wire.write(data2[5], 2);
   Wire.endTransmission();
 
-  pinMode(VLC_MODULATION_PIN, OUTPUT);
+  pinMode(VLC_MODULATION_PIN, OUTPUT);          
+  digitalWrite(VLC_MODULATION_PIN, LOW);
 
   interleaver(data, interout);
   manchester(data, interout, manout);
@@ -171,50 +172,69 @@ void setup() {
 
 
 void loop() {
-
+    pinMode(VLC_MODULATION_PIN, OUTPUT);                    
+    digitalWrite(VLC_MODULATION_PIN, LOW);
 
     if(modbus_data_available())
-    {   if(sendVLC)
+    {
+
+    sendVLC=modbus.Coil(VLC_ON_COIL);
+    if(!sendVLC)                                            
         {
-            pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 44);    
+           pinMode(VLC_MODULATION_PIN, OUTPUT);
+           digitalWrite(VLC_MODULATION_PIN, LOW);          
 
         }
-        modbus.task();
 
-        sendVLC=modbus.Coil(VLC_ON_COIL);
+    else
+    {
+        pinMode(VLC_MODULATION_PIN, OUTPUT);
+        analogWrite(VLC_MODULATION_PIN, 43);        
+
+    }
+        modbus.task();
         
         
         int b=modbus.Hreg(BRIGHTNESS_H);
         led_brightness(b);
 
 
-      int i=0;                          
+      int i=0;                                      
 
       do{
           data[i]=char(modbus.Hreg(i+VLC_START_H));
           i++;
-      }while(modbus.Hreg(i)!=0);   
+      }while(modbus.Hreg(i)!=0);                    
+
       data[i]=0;
+
+
+      if (data[0]=='\0')
+         {sendVLC=0;                            
+          modbus.Coil(VLC_ON_COIL,0);           
+         }
       if (olddata!=data)
       {
 
-      interleaver(data, interout);
-      manchester(data, interout, manout);
-      foo(data, manout, final);
-      i=0;
-      while(data[i]!=0){
-            olddata[i]=data[i];
-            i++;
-      }
+          interleaver(data, interout);
+          manchester(data, interout, manout);
+          foo(data, manout, final);
+          i=0;
+          while(data[i]!=0){
+                olddata[i]=data[i];
+                i++;
+              }
       }
   }
 
   if(sendVLC)
   {
       pinMode(VLC_MODULATION_PIN, OUTPUT);
-      send_vlc_data(data, final, VLC_MODULATION_PIN);
+      send_vlc_data(data, final, VLC_MODULATION_PIN);       
   }
+  pinMode(VLC_MODULATION_PIN, OUTPUT);                    
+  digitalWrite(VLC_MODULATION_PIN, LOW);
+
   if (millis() > update_time + 3000)
   {   update_time = millis();
       modbus.Ireg(LDR_IP, analogRead(LDR_PIN));
