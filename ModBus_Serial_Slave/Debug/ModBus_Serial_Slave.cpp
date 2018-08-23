@@ -32,6 +32,8 @@ int modbus_data_available();
 void setup();
 void loop();
 void led_brightness(int b);
+void setup_gpio();
+void modulate_vlc();
 
 #line 28
 ModbusSerial modbus;
@@ -61,7 +63,8 @@ unsigned long inc_time = 0;
 #define BRIGHTNESS_H 2000
 #define CHIP_TEMP_H 3000
 
-#define VLC_ON_COIL 1000       
+#define LAMP_ON_H 4000
+#define VLC_ON_H 4001       
 
 
 
@@ -80,10 +83,13 @@ char data[VLC_STR_LEN]="CPS";
 char olddata[VLC_STR_LEN]="CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
 bool sendVLC=true;                    
+bool lampON=true;
+
+HardwareSerial* ModbusSerialPort = &Serial;                    
 
 
 
-HardwareSerial* ModbusSerialPort = &Serial1;                    
+
 int modbus_data_available()
 {
     return ModbusSerialPort->available();
@@ -129,42 +135,25 @@ void setup() {
 
   
 
-  modbus.addCoil(VLC_ON_COIL, sendVLC);
+  modbus.addHreg(VLC_ON_H, sendVLC);
+  modbus.addHreg(LAMP_ON_H, lampON);
 
   for(int i=VLC_STR_LEN; i<(VLC_STR_LEN+VLC_START_H); i++)
   modbus.addHreg(i, '\0');
+
+
   
   modbus.Hreg(1000, 'c');
   modbus.Hreg(1001, 'p');
   modbus.Hreg(1002, 's');
 
-
-  Wire.setModule(1);
-  Wire.begin();
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(ioconf1, 2);
-  Wire.endTransmission();
-
-
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(ioconf2, 2);
-  Wire.endTransmission();
-
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(data1[5], 2);
-  Wire.endTransmission();
-
-
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(data2[5], 2);
-  Wire.endTransmission();
+  setup_gpio();
+  led_brightness(50);       
 
   pinMode(VLC_MODULATION_PIN, OUTPUT);          
   digitalWrite(VLC_MODULATION_PIN, LOW);
 
-  interleaver(data, interout);
-  manchester(data, interout, manout);
-  foo(data, manout, final);
+  modulate_vlc();                 
 
 }
 
@@ -178,8 +167,8 @@ void loop() {
     if(modbus_data_available())
     {
 
-    sendVLC=modbus.Coil(VLC_ON_COIL);
-    if(!sendVLC)                                            
+
+    if(!sendVLC && lampON)                                  
         {
            pinMode(VLC_MODULATION_PIN, OUTPUT);
            digitalWrite(VLC_MODULATION_PIN, LOW);          
@@ -194,10 +183,22 @@ void loop() {
     }
         modbus.task();
         
+
+        if (modbus.Hreg(VLC_ON_H) > 0)
+            sendVLC=true;
+        else
+            sendVLC=false;
+        if (modbus.Hreg(LAMP_ON_H) > 0)
+            lampON=true;
+        else
+            lampON=false;
+
         
         int b=modbus.Hreg(BRIGHTNESS_H);
-        led_brightness(b);
-
+        if(lampON)
+            led_brightness(b);
+        else
+            led_brightness(0);
 
       int i=0;                                      
 
@@ -211,14 +212,14 @@ void loop() {
 
       if (data[0]=='\0')
          {sendVLC=0;                            
-          modbus.Coil(VLC_ON_COIL,0);           
+          modbus.Coil(VLC_ON_H,0);           
          }
-      if (olddata!=data)
+
+
+      if (olddata!=data)                        
       {
 
-          interleaver(data, interout);
-          manchester(data, interout, manout);
-          foo(data, manout, final);
+          modulate_vlc();
           i=0;
           while(data[i]!=0){
                 olddata[i]=data[i];
@@ -227,15 +228,18 @@ void loop() {
       }
   }
 
-  if(sendVLC)
+  if(sendVLC && lampON)
   {
       pinMode(VLC_MODULATION_PIN, OUTPUT);
       send_vlc_data(data, final, VLC_MODULATION_PIN);       
   }
+
+
+
   pinMode(VLC_MODULATION_PIN, OUTPUT);                    
   digitalWrite(VLC_MODULATION_PIN, LOW);
 
-  if (millis() > update_time + 3000)
+  if (millis() > update_time + 2000)
   {   update_time = millis();
       modbus.Ireg(LDR_IP, analogRead(LDR_PIN));
       modbus.Ireg(TEMP_IP, analogRead(TEMP_PIN));
@@ -272,9 +276,30 @@ void led_brightness(int b)
 
 
 
+void setup_gpio()
+{
+  Wire.setModule(1);
+  Wire.begin();
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(ioconf1, 2);
+  Wire.endTransmission();
 
 
+  Wire.beginTransmission(LAMP_I2C_ADDR);
+  Wire.write(ioconf2, 2);
+  Wire.endTransmission();
 
+
+}
+
+
+void modulate_vlc()
+{
+  interleaver(data, interout);
+  manchester(data, interout, manout);
+  foo(data, manout, final);
+
+}
 
 
 
