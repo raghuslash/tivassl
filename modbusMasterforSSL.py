@@ -8,8 +8,8 @@ from pymodbus.client.sync import ModbusSerialClient as ModbusClient
 #import paho.mqtt.client as mqtt
 import msvcrt
 
-from multiprocessing.dummy import Pool
-pool = Pool(2)
+# from multiprocessing.dummy import Pool
+# pool = Pool(2)
 
 import time
 # import RPi.GPIO as GPIO
@@ -28,7 +28,7 @@ import time
 mbclient= ModbusClient(method = "rtu", timeout=1, port='COM5',stopbits = 1, bytesize = 8, parity = 'N', baudrate = 19200)
 connection = mbclient.connect()
 print(connection)
-time.sleep(3)
+time.sleep(5)
 
 #ALL SENSOR DATA ARE IN INPUT REGISTERS
 
@@ -43,7 +43,8 @@ brightness_reg_adr=2000
 vlc_data_reg_ard=1000
 
 #VLC ENABLE 
-vlc_enable_coil=1000
+lamp_enable_addr=4000
+vlc_enable_addr=4001
 
 while (1):
     
@@ -57,7 +58,7 @@ while (1):
     ldr=result.registers[0]
     result=mbclient.read_holding_registers(chip_temp_adc_adr, unit=1)
     chip_temp_adc=result.registers[0]
-    temp=(temp_adc*100)/4096
+    temp=(temp_adc*75)/4096
     voltage=(voltage_adc*15.18)/4096
     current=(current_adc*5.5)/4096
     chip_temp=(1475 - ((2475*chip_temp_adc)/4096))/10
@@ -67,6 +68,7 @@ while (1):
     print("Current: "+str(round(current,2))+"A. ADC value: "+str(current_adc)+".")
     print("LDR ADC value: "+str(ldr)+".")
     print("Chip Temperature: "+str(round(chip_temp,2))+"°C. ADC value: "+str(chip_temp_adc)+".")
+    print("Time: ", time.time())
     time.sleep(3)
     if msvcrt.kbhit():
         print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
@@ -76,13 +78,13 @@ while (1):
             br=input("Enter Brightness Value: ")
             br=int(br)
             # print(br)
-            print(mbclient.write_register(brightness_reg_adr, br, unit=1))
+            print(mbclient.write_registers(brightness_reg_adr, br, unit=1))
         elif op==2:
             vlcstaus=input("Enter 1 to enable VLC or 0 to disable vlc: ")
             vlc_en=1
             if int(vlcstaus)<1:
                 vlc_en=0
-            print(mbclient.write_coil(vlc_enable_coil, vlc_en, unit=1))
+            print(mbclient.write_register(vlc_enable_addr, vlc_en, unit=1))
 
         elif op==3:
             vlcdata=input("Enter new VLC data string: ")
@@ -95,6 +97,8 @@ while (1):
         else:
             print("Invalid option!!")
             continue
+
+
 
             
 #def send_cmd(x):

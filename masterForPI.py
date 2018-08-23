@@ -13,25 +13,7 @@ from pymodbus.client.sync import ModbusSerialClient as ModbusClient
 import sys
 import select
 
-import serial.tools.list_ports
-
-portdetected = serial.tools.list_ports.comports()
-print (portdetected)
-
-portdetected = list(filter(lambda x: "USB" in x.name, portdetected))
-print (portdetected)
-
-if (len(portdetected)):
-  portdetected= portdetected[0].device
-  print ("Using port:",portdetected)
-else:
-  print("Serial port not found....Exiting")
-  exit()
-
-
-#portdetected= "/dev/ttyACM0"
-
-mbclient= ModbusClient(method = "rtu", timeout=1, port=portdetected, stopbits = 1, bytesize = 8, parity = 'N', baudrate = 19200)
+mbclient= ModbusClient(method = "rtu", timeout=1, port='/dev/ttyUSB0',stopbits = 1, bytesize = 8, parity = 'N', baudrate = 9600)
 connection = mbclient.connect()
 print(connection)
 time.sleep(3)
@@ -49,7 +31,7 @@ brightness_reg_adr=2000
 vlc_data_reg_ard=1000
 
 #VLC ENABLE 
-vlc_enable_coil=1000
+vlc_enable_addr=1000
 
 
 while (1):
@@ -89,7 +71,7 @@ while (1):
             vlc_en=1
             if int(vlcstaus)<1:
                 vlc_en=0
-            print(mbclient.write_coil(vlc_enable_coil, vlc_en, unit=1))
+            print(mbclient.write_register(vlc_enable_addr, vlc_en, unit=1))
 
         elif op==3:
             vlcdata=input("Enter new VLC data string: ")
