@@ -11,7 +11,6 @@
 #include <Wire.h>
 #include <vlcfunctions.h>
 
-
 #define PRINTREGISTERS
 
 
@@ -19,14 +18,11 @@
 #define ID 1
 
 
+#define TXPIN 6 
+#define REPIN 5 
 
-
-#define TXPIN 6                 
-#define REPIN 5                  
-
-
-#define VLC_STR_LEN 100         
-#define VLC_MODULATION_PIN 14   
+#define VLC_STR_LEN 100       
+#define VLC_MODULATION_PIN 14 
 
 int modbus_data_available();
 void setup();
@@ -35,7 +31,7 @@ void led_brightness(int b);
 void setup_gpio();
 void modulate_vlc();
 
-#line 28
+#line 24
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -48,15 +44,14 @@ unsigned long inc_time = 0;
 #define LAMP_BR_ADDR1 0x15
 
 
-
 #define TEMP_IP 3000
-#define TEMP_PIN A6             
+#define TEMP_PIN A6 
 #define VOLTAGE_IP 3001
-#define VOLTAGE_PIN A1          
+#define VOLTAGE_PIN A1 
 #define CURRENT_IP 3002
-#define CURRENT_PIN A0          
+#define CURRENT_PIN A0 
 #define LDR_IP 3003
-#define LDR_PIN A5              
+#define LDR_PIN A5 
 
 
 #define VLC_START_H 1000
@@ -64,254 +59,228 @@ unsigned long inc_time = 0;
 #define CHIP_TEMP_H 3000
 
 #define LAMP_ON_H 4000
-#define VLC_ON_H 4001       
+#define VLC_ON_H 4001 
+
+byte ioconf1[2] = {0x00, 0x00}; 
+byte ioconf2[2] = {0x01, 0x00};
 
 
+byte data1[11][2] = {{0x14, 0xF0}, {0x14, 0xF0}, {0x14, 0xF0}, {0x14, 0x70}, {0x14, 0x70}, {0x14, 0x70}, {0x14, 0x70}, {0x14, 0x80}, {0x14, 0x00}, {0x14, 0x00}, {0x14, 0x00}};
+byte data2[11][2] = {{0x15, 0xF9}, {0x15, 0xF1}, {0x15, 0xC9}, {
+                                                                   0x15,
+                                                                   0xB8,
+                                                               },
+                     {0x15, 0xB0},
+                     {0x15, 0x88},
+                     {0x15, 0x80},
+                     {0x15, 0x41},
+                     {0x15, 0x30},
+                     {0x15, 0x08},
+                     {0x15, 0x00}};
 
-byte ioconf1[2]={0x00,0x00};  
-byte ioconf2[2]={0x01,0x00};
-
-
-
-byte data1[11][2]={{0x14,0xF0},{0x14,0xF0},{0x14,0xF0},{0x14,0x70},{0x14,0x70},{0x14,0x70},{0x14,0x70},{0x14,0x80},{0x14,0x00},{0x14,0x00},{0x14,0x00}};
-byte data2[11][2]={{0x15,0xF9},{0x15,0xF1},{0x15,0xC9},{0x15,0xB8,},{0x15,0xB0},{0x15,0x88},{0x15,0x80},{0x15,0x41},{0x15,0x30},{0x15,0x08},{0x15,0x00}};
-
-
-
-int oldb=0;
-char data[VLC_STR_LEN]="CPS";              
-char olddata[VLC_STR_LEN]="CPS";
+int oldb = 0;
+char data[VLC_STR_LEN] = "CPS"; 
+char olddata[VLC_STR_LEN] = "CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
-bool sendVLC=true;                    
-bool lampON=true;
+bool sendVLC = true; 
+bool lampON = true;
 
-HardwareSerial* ModbusSerialPort = &Serial;                    
-
-
-
+HardwareSerial *ModbusSerialPort = &Serial1; 
 
 int modbus_data_available()
 {
     return ModbusSerialPort->available();
 }
 
-void setup() {
+void setup()
+{
 
-  
+    
 
-  modbus.config(ModbusSerialPort, BAUD, TXPIN);             
+    modbus.config(ModbusSerialPort, BAUD, TXPIN); 
 
-  
-  modbus.setSlaveId(ID);
+    
+    modbus.setSlaveId(ID);
 
+    
 
+    
 
+    
 
+    
 
+    
+    
 
+    
+    
+    
 
+    
+    modbus.addIreg(TEMP_IP, 0);
+    modbus.addIreg(VOLTAGE_IP, 0);
+    modbus.addIreg(CURRENT_IP, 0);
+    modbus.addIreg(LDR_IP, 0);
 
+    
 
+    modbus.addHreg(BRIGHTNESS_H, 50);
+    modbus.addHreg(CHIP_TEMP_H, 0);
 
+    
 
+    modbus.addHreg(VLC_ON_H, sendVLC);
+    modbus.addHreg(LAMP_ON_H, lampON);
 
+    for (int i = VLC_STR_LEN; i < (VLC_STR_LEN + VLC_START_H); i++)
+        modbus.addHreg(i, '\0');
 
+    
+    modbus.Hreg(1000, 'c');
+    modbus.Hreg(1001, 'p');
+    modbus.Hreg(1002, 's');
 
+    setup_gpio();
+    led_brightness(50); 
 
-
-
-
-  
-  modbus.addIreg(TEMP_IP, 0);
-  modbus.addIreg(VOLTAGE_IP, 0);
-  modbus.addIreg(CURRENT_IP, 0);
-  modbus.addIreg(LDR_IP, 0);
-
-
-  
-
-  modbus.addHreg(BRIGHTNESS_H, 50);
-  modbus.addHreg(CHIP_TEMP_H, 0);
-
-  
-
-  modbus.addHreg(VLC_ON_H, sendVLC);
-  modbus.addHreg(LAMP_ON_H, lampON);
-
-  for(int i=VLC_STR_LEN; i<(VLC_STR_LEN+VLC_START_H); i++)
-  modbus.addHreg(i, '\0');
-
-
-  
-  modbus.Hreg(1000, 'c');
-  modbus.Hreg(1001, 'p');
-  modbus.Hreg(1002, 's');
-
-  setup_gpio();
-  led_brightness(50);       
-
-  pinMode(VLC_MODULATION_PIN, OUTPUT);          
-  digitalWrite(VLC_MODULATION_PIN, LOW);
-
-  modulate_vlc();                 
-
-}
-
-
-
-
-void loop() {
-    pinMode(VLC_MODULATION_PIN, OUTPUT);                    
+    pinMode(VLC_MODULATION_PIN, OUTPUT); 
     digitalWrite(VLC_MODULATION_PIN, LOW);
 
-    if(modbus_data_available())
+    modulate_vlc(); 
+}
+
+void loop()
+{
+    pinMode(VLC_MODULATION_PIN, OUTPUT); 
+    digitalWrite(VLC_MODULATION_PIN, LOW);
+
+    if (modbus_data_available())
     {
 
-
-    if(!sendVLC && lampON)                                  
+        if (!sendVLC && lampON) 
         {
-           pinMode(VLC_MODULATION_PIN, OUTPUT);
-           digitalWrite(VLC_MODULATION_PIN, LOW);          
-
+            pinMode(VLC_MODULATION_PIN, OUTPUT);
+            digitalWrite(VLC_MODULATION_PIN, LOW); 
         }
 
-    else
-    {
-        pinMode(VLC_MODULATION_PIN, OUTPUT);
-        analogWrite(VLC_MODULATION_PIN, 43);        
-
-    }
+        else
+        {
+            pinMode(VLC_MODULATION_PIN, OUTPUT);
+            analogWrite(VLC_MODULATION_PIN, 43); 
+        }
         modbus.task();
         
 
         if (modbus.Hreg(VLC_ON_H) > 0)
-            sendVLC=true;
+            sendVLC = true;
         else
-            sendVLC=false;
+            sendVLC = false;
         if (modbus.Hreg(LAMP_ON_H) > 0)
-            lampON=true;
+            lampON = true;
         else
-            lampON=false;
+            lampON = false;
 
         
-        int b=modbus.Hreg(BRIGHTNESS_H);
-        if(lampON)
+        int b = modbus.Hreg(BRIGHTNESS_H);
+        if (lampON)
             led_brightness(b);
         else
             led_brightness(0);
 
-      int i=0;                                      
+        int i = 0; 
 
-      do{
-          data[i]=char(modbus.Hreg(i+VLC_START_H));
-          i++;
-      }while(modbus.Hreg(i)!=0);                    
+        do
+        {
+            data[i] = char(modbus.Hreg(i + VLC_START_H));
+            i++;
+        } while (modbus.Hreg(i) != 0); 
 
-      data[i]=0;
+        data[i] = 0;
 
+        if (data[0] == '\0')
+        {
+            sendVLC = 0;              
+            modbus.Coil(VLC_ON_H, 0); 
+        }
 
-      if (data[0]=='\0')
-         {sendVLC=0;                            
-          modbus.Coil(VLC_ON_H,0);           
-         }
+        if (olddata != data) 
+        {
 
-
-      if (olddata!=data)                        
-      {
-
-          modulate_vlc();
-          i=0;
-          while(data[i]!=0){
-                olddata[i]=data[i];
+            modulate_vlc();
+            i = 0;
+            while (data[i] != 0)
+            {
+                olddata[i] = data[i];
                 i++;
-              }
-      }
-  }
+            }
+        }
+    }
 
-  if(sendVLC && lampON)
-  {
-      pinMode(VLC_MODULATION_PIN, OUTPUT);
-      send_vlc_data(data, final, VLC_MODULATION_PIN);       
-  }
+    if (sendVLC && lampON)
+    {
+        pinMode(VLC_MODULATION_PIN, OUTPUT);
+        send_vlc_data(data, final, VLC_MODULATION_PIN); 
+    }
 
+    pinMode(VLC_MODULATION_PIN, OUTPUT); 
+    digitalWrite(VLC_MODULATION_PIN, LOW);
 
-
-  pinMode(VLC_MODULATION_PIN, OUTPUT);                    
-  digitalWrite(VLC_MODULATION_PIN, LOW);
-
-  if (millis() > update_time + 2000)
-  {   update_time = millis();
-      modbus.Ireg(LDR_IP, analogRead(LDR_PIN));
-      modbus.Ireg(TEMP_IP, analogRead(TEMP_PIN));
-      modbus.Ireg(VOLTAGE_IP, analogRead(VOLTAGE_PIN));
-      modbus.Ireg(CURRENT_IP, analogRead(CURRENT_PIN));
-      modbus.Hreg(CHIP_TEMP_H, analogRead(TEMPSENSOR));
-  }
-
+    if (millis() > update_time + 2000)
+    {
+        update_time = millis();
+        modbus.Ireg(LDR_IP, analogRead(LDR_PIN));
+        modbus.Ireg(TEMP_IP, analogRead(TEMP_PIN));
+        modbus.Ireg(VOLTAGE_IP, analogRead(VOLTAGE_PIN));
+        modbus.Ireg(CURRENT_IP, analogRead(CURRENT_PIN));
+        modbus.Hreg(CHIP_TEMP_H, analogRead(TEMPSENSOR));
+    }
 }
-
 
 void led_brightness(int b)
 {
 
-        b=(b/10);
+    b = (b / 10);
 
-        if (b>10) b=10;
-        if(b<0) b=0;
+    if (b > 10)
+        b = 10;
+    if (b < 0)
+        b = 0;
 
-        if(oldb!=b);                           
-        {
-            oldb=b;
+    if (oldb != b)
+        ; 
+    {
+        oldb = b;
 
-            Wire.beginTransmission(LAMP_I2C_ADDR);
-            Wire.write(data1[b], 2);
-            Wire.endTransmission();
+        Wire.beginTransmission(LAMP_I2C_ADDR);
+        Wire.write(data1[b], 2);
+        Wire.endTransmission();
 
-
-            Wire.beginTransmission(LAMP_I2C_ADDR);
-            Wire.write(data2[b], 2);
-            Wire.endTransmission();
-        }
+        Wire.beginTransmission(LAMP_I2C_ADDR);
+        Wire.write(data2[b], 2);
+        Wire.endTransmission();
+    }
 }
-
-
 
 void setup_gpio()
 {
-  Wire.setModule(1);
-  Wire.begin();
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(ioconf1, 2);
-  Wire.endTransmission();
+    Wire.setModule(1);
+    Wire.begin();
+    Wire.beginTransmission(LAMP_I2C_ADDR);
+    Wire.write(ioconf1, 2);
+    Wire.endTransmission();
 
-
-  Wire.beginTransmission(LAMP_I2C_ADDR);
-  Wire.write(ioconf2, 2);
-  Wire.endTransmission();
-
-
+    Wire.beginTransmission(LAMP_I2C_ADDR);
+    Wire.write(ioconf2, 2);
+    Wire.endTransmission();
 }
-
 
 void modulate_vlc()
 {
-  interleaver(data, interout);
-  manchester(data, interout, manout);
-  foo(data, manout, final);
-
+    interleaver(data, interout);
+    manchester(data, interout, manout);
+    foo(data, manout, final);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

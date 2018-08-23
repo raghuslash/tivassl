@@ -31,7 +31,7 @@ brightness_reg_adr=2000
 vlc_data_reg_ard=1000
 
 #VLC ENABLE 
-vlc_enable_addr=1000
+vlc_enable_addr=4001
 
 
 while (1):
