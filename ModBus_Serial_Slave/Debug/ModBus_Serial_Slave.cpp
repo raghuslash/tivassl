@@ -11,7 +11,8 @@
 #include <Wire.h>
 #include <vlcfunctions.h>
 
-#define PRINTREGISTERS
+
+
 
 
 #define BAUD 19200
@@ -30,8 +31,9 @@ void loop();
 void led_brightness(int b);
 void setup_gpio();
 void modulate_vlc();
+void startup_blink();
 
-#line 24
+#line 25
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -60,7 +62,7 @@ unsigned long inc_time = 0;
 #define CHIP_TEMP_H 3001
 
 #define LAMP_ON_H 4000
-#define VLC_ON_H 4001 
+#define VLC_ON_H 4001               
 
 byte ioconf1[2] = {0x00, 0x00}; 
 byte ioconf2[2] = {0x01, 0x00};
@@ -80,9 +82,8 @@ int oldb = 0;
 char data[VLC_STR_LEN] = "CPS"; 
 char olddata[VLC_STR_LEN] = "CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
-bool sendVLC = true; 
+bool sendVLC = false;               
 bool lampON = true;
-
 HardwareSerial *ModbusSerialPort = &Serial1; 
 
 int modbus_data_available()
@@ -95,7 +96,7 @@ void setup()
 
     
 
-    modbus.config(ModbusSerialPort, BAUD, TXPIN); 
+    modbus.config(ModbusSerialPort, BAUD, TXPIN);       
 
     
     modbus.setSlaveId(ID);
@@ -126,9 +127,7 @@ void setup()
     modbus.addHreg(BRIGHTNESS_H, 50);
     modbus.addHreg(CHIP_TEMP_H, 0);
 
-    
-
-    modbus.addHreg(VLC_ON_H, sendVLC);
+    modbus.addHreg(VLC_ON_H, sendVLC);      
     modbus.addHreg(LAMP_ON_H, lampON);
 
     for (int i = VLC_STR_LEN; i < (VLC_STR_LEN + VLC_START_H); i++)
@@ -140,11 +139,12 @@ void setup()
     modbus.Hreg(1002, 'S');
 
     setup_gpio();
+    delay(1);
+    startup_blink();
     led_brightness(50); 
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);            
     digitalWrite(VLC_MODULATION_PIN, LOW);
-
     modulate_vlc(); 
 
 }
@@ -153,7 +153,7 @@ int adc_temp, chip_temp;
 
 void loop()
 {
-    pinMode(VLC_MODULATION_PIN, OUTPUT); 
+    pinMode(VLC_MODULATION_PIN, OUTPUT);                
     digitalWrite(VLC_MODULATION_PIN, LOW);              
 
     if (modbus_data_available())
@@ -165,18 +165,24 @@ void loop()
             digitalWrite(VLC_MODULATION_PIN, LOW);      
         }
 
+        #ifdef VLC_Feature
         else if (lampON)
         {
             pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 43); 
+            analogWrite(VLC_MODULATION_PIN, 43);          
         }
+        #endif
+
         modbus.task();
         
 
+        pinMode(VLC_MODULATION_PIN, OUTPUT);                 
+        digitalWrite(VLC_MODULATION_PIN, LOW);              
         if (modbus.Hreg(VLC_ON_H) > 0)
             sendVLC = true;
         else
             sendVLC = false;
+
         if (modbus.Hreg(LAMP_ON_H) > 0)
             lampON = true;
         else
@@ -189,7 +195,8 @@ void loop()
         else
             led_brightness(0);
 
-        
+
+        #ifdef VLC_Feature                  
         int i = 0;
 
         do
@@ -206,7 +213,7 @@ void loop()
             modbus.Coil(VLC_ON_H, 0);   
         }
 
-        if (olddata != data) 
+        if (olddata != data)             
         {
 
             modulate_vlc();
@@ -218,13 +225,17 @@ void loop()
             }
             olddata[i]='\0';
         }
+        #endif
     }
 
+
+    #ifdef VLC_Feature
     if (sendVLC && lampON)
     {
         pinMode(VLC_MODULATION_PIN, OUTPUT);
         send_vlc_data(data, final, VLC_MODULATION_PIN); 
     }
+    #endif
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);        
     digitalWrite(VLC_MODULATION_PIN, LOW);      
@@ -247,7 +258,7 @@ void loop()
 void led_brightness(int b)
 {
 
-    b = (b / 10);
+    b = (b/10);
 
     if (b > 10)
         b = 10;
@@ -257,7 +268,8 @@ void led_brightness(int b)
     if (oldb != b) 
     {
         oldb = b;
-
+        Wire.setModule(1);
+        Wire.begin();
         Wire.beginTransmission(LAMP_I2C_ADDR);
         Wire.write(data1[b], 2);
         Wire.endTransmission();
@@ -286,6 +298,20 @@ void modulate_vlc()
     interleaver(data, interout);
     manchester(data, interout, manout);
     foo(data, manout, final);
+}
+
+void startup_blink()
+{
+    led_brightness(10);
+    delay(1000);
+    led_brightness(20);
+    delay(1000);
+    led_brightness(30);
+    delay(1000);
+    led_brightness(40);
+    delay(1000);
+
+
 }
 
 

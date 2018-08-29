@@ -8,7 +8,8 @@
 #include <Wire.h>
 #include <vlcfunctions.h>
 
-#define PRINTREGISTERS
+
+//#define VLC_Feature        //Uncomment to enable VLC Feature
 
 // ModBus Port information
 #define BAUD 19200
@@ -49,7 +50,7 @@ unsigned long inc_time = 0;
 #define CHIP_TEMP_H 3001
 
 #define LAMP_ON_H 4000
-#define VLC_ON_H 4001 //Enable to start VLC
+#define VLC_ON_H 4001               //Enable to start VLC
 
 byte ioconf1[2] = {0x00, 0x00}; //GPIO expander configs
 byte ioconf2[2] = {0x01, 0x00};
@@ -69,9 +70,8 @@ int oldb = 0;
 char data[VLC_STR_LEN] = "CPS"; //Initially transmit this string
 char olddata[VLC_STR_LEN] = "CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
-bool sendVLC = true; //Set to true to start VLC on startup
+bool sendVLC = false;               //Set to true to start VLC on startup
 bool lampON = true;
-
 HardwareSerial *ModbusSerialPort = &Serial1; //Serial Port that MODBUS network connects to. **Change to Serial1 before deployment
 
 int modbus_data_available()
@@ -84,7 +84,7 @@ void setup()
 
     // Enable ever receive
 
-    modbus.config(ModbusSerialPort, BAUD, TXPIN); // Config Modbus Serial (port, speed, byte format)
+    modbus.config(ModbusSerialPort, BAUD, TXPIN);       // Config Modbus Serial (port, speed, byte format)
 
     // Set the Slave ID (1-247)
     modbus.setSlaveId(ID);
@@ -115,9 +115,7 @@ void setup()
     modbus.addHreg(BRIGHTNESS_H, 50);
     modbus.addHreg(CHIP_TEMP_H, 0);
 
-    //Coil to control VLC transmission
-
-    modbus.addHreg(VLC_ON_H, sendVLC);
+    modbus.addHreg(VLC_ON_H, sendVLC);      //Coil to control VLC transmission
     modbus.addHreg(LAMP_ON_H, lampON);
 
     for (int i = VLC_STR_LEN; i < (VLC_STR_LEN + VLC_START_H); i++)
@@ -128,12 +126,16 @@ void setup()
     modbus.Hreg(1001, 'P');
     modbus.Hreg(1002, 'S');
 
+
+    Wire.setModule(1);
+    Wire.begin();
     setup_gpio();
+    delay(1);
+    startup_blink();
     led_brightness(50); //SET to 50% on startup
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);            //Disable Modulation on Startup
     digitalWrite(VLC_MODULATION_PIN, LOW);
-
     modulate_vlc(); // Do VLC modulation
 
 }
@@ -142,7 +144,7 @@ int adc_temp, chip_temp;            //variables for adc conversion
 
 void loop()
 {
-    pinMode(VLC_MODULATION_PIN, OUTPUT); //Reset Brightness to 100
+    pinMode(VLC_MODULATION_PIN, OUTPUT);                //Reset Brightness to 100
     digitalWrite(VLC_MODULATION_PIN, LOW);              // Pull modulation low and turn on the LEDs. (!! It is dangerous to keep the LEDs off for > 500us)
 
     if (modbus_data_available())
@@ -154,18 +156,24 @@ void loop()
             digitalWrite(VLC_MODULATION_PIN, LOW);      // Pull modulation low and turn on the LEDs. (!! It is dangerous to keep the LEDs off for > 500us)
         }
 
+        #ifdef VLC_Feature
         else if (lampON)
         {
             pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 43); //SETS TIME - LED IS OFF (Library has 490Hz PWM Frequency.)
+            analogWrite(VLC_MODULATION_PIN, 43);          //SETS TIME - LED IS OFF (Library has 490Hz PWM Frequency.)
         }
+        #endif
+
         modbus.task();
         //UPDATE BRIGHTNESS
 
+        pinMode(VLC_MODULATION_PIN, OUTPUT);                 //Reset Brightness to 100
+        digitalWrite(VLC_MODULATION_PIN, LOW);              // Pull modulation low and turn on the LEDs. (!! It is dangerous to keep the LEDs off for > 500us)
         if (modbus.Hreg(VLC_ON_H) > 0)
             sendVLC = true;
         else
             sendVLC = false;
+
         if (modbus.Hreg(LAMP_ON_H) > 0)
             lampON = true;
         else
@@ -178,7 +186,8 @@ void loop()
         else
             led_brightness(0);
 
-        //UPDATE VLC STRING
+
+        #ifdef VLC_Feature                  //UPDATE VLC STRING
         int i = 0;
 
         do
@@ -195,7 +204,7 @@ void loop()
             modbus.Coil(VLC_ON_H, 0);   //Reset VLC status coil
         }
 
-        if (olddata != data) //Update modulation if data has changed.
+        if (olddata != data)             //Update modulation if data has changed.
         {
 
             modulate_vlc();
@@ -207,13 +216,17 @@ void loop()
             }
             olddata[i]='\0';
         }
+        #endif
     }
 
+
+    #ifdef VLC_Feature
     if (sendVLC && lampON)
     {
         pinMode(VLC_MODULATION_PIN, OUTPUT);
         send_vlc_data(data, final, VLC_MODULATION_PIN); //SEND ENCODED VLC STRING
     }
+    #endif
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);        //Reset the Analog Write
     digitalWrite(VLC_MODULATION_PIN, LOW);      // Pull modulation low and turn on the LEDs. (!! It is dangerous to keep the LEDs off for > 500us)
@@ -236,7 +249,7 @@ void loop()
 void led_brightness(int b)
 {
 
-    b = (b / 10);
+    b = (b/10);
 
     if (b > 10)
         b = 10;
@@ -246,7 +259,8 @@ void led_brightness(int b)
     if (oldb != b) //CHANGE BRIGHTNESS ONLY IF IT HAS CHANGED
     {
         oldb = b;
-
+        Wire.setModule(1);
+        Wire.begin();
         Wire.beginTransmission(LAMP_I2C_ADDR);
         Wire.write(data1[b], 2);
         Wire.endTransmission();
@@ -275,4 +289,18 @@ void modulate_vlc()
     interleaver(data, interout);
     manchester(data, interout, manout);
     foo(data, manout, final);
+}
+
+void startup_blink()
+{
+    led_brightness(10);
+    delay(1000);
+    led_brightness(20);
+    delay(1000);
+    led_brightness(30);
+    delay(1000);
+    led_brightness(40);
+    delay(1000);
+
+
 }
