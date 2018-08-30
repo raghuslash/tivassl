@@ -12,9 +12,6 @@
 #include <vlcfunctions.h>
 
 
-
-
-
 #define BAUD 19200
 #define ID 2
 
@@ -33,7 +30,7 @@ void setup_gpio();
 void modulate_vlc();
 void startup_blink();
 
-#line 25
+#line 22
 ModbusSerial modbus;
 
 const int ledPin = RED_LED;
@@ -64,6 +61,11 @@ unsigned long inc_time = 0;
 #define LAMP_ON_H 4000
 #define VLC_ON_H 4001               
 
+
+bool sendVLC = true;               
+bool lampON = true;                 
+
+
 byte ioconf1[2] = {0x00, 0x00}; 
 byte ioconf2[2] = {0x01, 0x00};
 
@@ -82,8 +84,7 @@ int oldb = 0;
 char data[VLC_STR_LEN] = "CPS"; 
 char olddata[VLC_STR_LEN] = "CPS";
 char interout[VLC_STR_LEN][8], manout[VLC_STR_LEN][16], final[VLC_STR_LEN][56];
-bool sendVLC = false;               
-bool lampON = true;
+
 HardwareSerial *ModbusSerialPort = &Serial1; 
 
 int modbus_data_available()
@@ -138,6 +139,9 @@ void setup()
     modbus.Hreg(1001, 'P');
     modbus.Hreg(1002, 'S');
 
+
+    Wire.setModule(1);
+    Wire.begin();
     setup_gpio();
     delay(1);
     startup_blink();
@@ -165,13 +169,13 @@ void loop()
             digitalWrite(VLC_MODULATION_PIN, LOW);      
         }
 
-        #ifdef VLC_Feature
+
         else if (lampON)
         {
             pinMode(VLC_MODULATION_PIN, OUTPUT);
             analogWrite(VLC_MODULATION_PIN, 43);          
         }
-        #endif
+
 
         modbus.task();
         
@@ -195,8 +199,7 @@ void loop()
         else
             led_brightness(0);
 
-
-        #ifdef VLC_Feature                  
+        
         int i = 0;
 
         do
@@ -225,17 +228,15 @@ void loop()
             }
             olddata[i]='\0';
         }
-        #endif
+
     }
 
 
-    #ifdef VLC_Feature
     if (sendVLC && lampON)
     {
         pinMode(VLC_MODULATION_PIN, OUTPUT);
         send_vlc_data(data, final, VLC_MODULATION_PIN); 
     }
-    #endif
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);        
     digitalWrite(VLC_MODULATION_PIN, LOW);      
@@ -268,8 +269,6 @@ void led_brightness(int b)
     if (oldb != b) 
     {
         oldb = b;
-        Wire.setModule(1);
-        Wire.begin();
         Wire.beginTransmission(LAMP_I2C_ADDR);
         Wire.write(data1[b], 2);
         Wire.endTransmission();
@@ -282,8 +281,7 @@ void led_brightness(int b)
 
 void setup_gpio()
 {
-    Wire.setModule(1);
-    Wire.begin();
+
     Wire.beginTransmission(LAMP_I2C_ADDR);
     Wire.write(ioconf1, 2);
     Wire.endTransmission();
@@ -302,15 +300,19 @@ void modulate_vlc()
 
 void startup_blink()
 {
+    pinMode(BLUE_LED,  OUTPUT);
+    digitalWrite(BLUE_LED, HIGH);
     led_brightness(10);
     delay(1000);
+    digitalWrite(BLUE_LED, LOW);
     led_brightness(20);
     delay(1000);
+    digitalWrite(BLUE_LED, HIGH);
     led_brightness(30);
     delay(1000);
+    digitalWrite(BLUE_LED, LOW);
     led_brightness(40);
     delay(1000);
-
 
 }
 
