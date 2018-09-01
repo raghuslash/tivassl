@@ -161,7 +161,7 @@ void loop()
         else if (lampON)
         {
             pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 43);          //SETS TIME - LED IS OFF (Library has 490Hz PWM Frequency.)
+            analogWrite(VLC_MODULATION_PIN, 44);          //SETS TIME - LED IS OFF (Library has 490Hz PWM Frequency.)
         }
 
 
@@ -288,6 +288,8 @@ void modulate_vlc()
 
 void startup_blink()
 {
+    led_brightness(0);
+    delay(200);
     pinMode(BLUE_LED,  OUTPUT);
     digitalWrite(BLUE_LED, HIGH);
     led_brightness(10);

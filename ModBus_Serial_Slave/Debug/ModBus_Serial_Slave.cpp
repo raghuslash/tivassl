@@ -173,7 +173,7 @@ void loop()
         else if (lampON)
         {
             pinMode(VLC_MODULATION_PIN, OUTPUT);
-            analogWrite(VLC_MODULATION_PIN, 43);          
+            analogWrite(VLC_MODULATION_PIN, 44);          
         }
 
 
