@@ -62,7 +62,7 @@ unsigned long inc_time = 0;
 #define VLC_ON_H 4001               
 
 
-bool sendVLC = true;               
+bool sendVLC = false;               
 bool lampON = true;                 
 
 
@@ -300,6 +300,8 @@ void modulate_vlc()
 
 void startup_blink()
 {
+    led_brightness(0);
+    delay(200);
     pinMode(BLUE_LED,  OUTPUT);
     digitalWrite(BLUE_LED, HIGH);
     led_brightness(10);

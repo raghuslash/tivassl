@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_SwMhIauAEeiJ3v27JwTMAQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_SwMhIquAEeiJ3v27JwTMAQ" bindingContexts="_SwMhKKuAEeiJ3v27JwTMAQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModBus_Serial_Slave.ino&quot; tooltip=&quot;ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;wiring_analog.c&quot; tooltip=&quot;tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModbusSerial.h&quot; tooltip=&quot;C:\Users\admin\Documents\Energia\libraries\ModbusSerial\ModbusSerial.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;C:\Users\admin\Documents\Energia\libraries\ModbusSerial\ModbusSerial.h&quot; project=&quot;ModBus_Serial_Slave&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModBus_Serial_Slave.ino&quot; tooltip=&quot;ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;wiring_analog.c&quot; tooltip=&quot;tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:com.ti.ccstudio.ui.keyBindingScheme</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_SwMhIquAEeiJ3v27JwTMAQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_TGMmUquAEeiJ3v27JwTMAQ" x="0" y="0" width="1024" height="768">
@@ -244,24 +244,30 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_TNkZoKuAEeiJ3v27JwTMAQ" elementId="org.eclipse.ui.editorss" selectedElement="_TNkZoauAEeiJ3v27JwTMAQ">
-      <children xsi:type="basic:PartStack" xmi:id="_TNkZoauAEeiJ3v27JwTMAQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_jRXNYKuAEeiJ3v27JwTMAQ">
+      <children xsi:type="basic:PartStack" xmi:id="_TNkZoauAEeiJ3v27JwTMAQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_uLOPIK_vEeihvcKSWvpPGg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>Maximized</tags>
         <tags>active</tags>
         <children xsi:type="advanced:Placeholder" xmi:id="_TNxN8KuAEeiJ3v27JwTMAQ" elementId="org.eclipse.ui.internal.introview" ref="_TGMmUKuAEeiJ3v27JwTMAQ"/>
         <children xsi:type="basic:Part" xmi:id="_jRXNYKuAEeiJ3v27JwTMAQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ModBus_Serial_Slave.ino" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" tooltip="" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModBus_Serial_Slave.ino&quot; partName=&quot;ModBus_Serial_Slave.ino&quot; title=&quot;ModBus_Serial_Slave.ino&quot; tooltip=&quot;ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7976&quot; selectionTopPixel=&quot;4315&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModBus_Serial_Slave.ino&quot; partName=&quot;ModBus_Serial_Slave.ino&quot; title=&quot;ModBus_Serial_Slave.ino&quot; tooltip=&quot;ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ModBus_Serial_Slave/ModBus_Serial_Slave.ino&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5497&quot; selectionTopPixel=&quot;2600&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_XFu6QK1-Eei74J3sQK7nJw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="wiring_analog.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;wiring_analog.c&quot; partName=&quot;wiring_analog.c&quot; title=&quot;wiring_analog.c&quot; tooltip=&quot;tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/tivac_EK-TM4C123GXL_core/src/core/wiring_analog.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5181&quot; selectionTopPixel=&quot;2475&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
           <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_uLOPIK_vEeihvcKSWvpPGg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ModbusSerial.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ModbusSerial.h&quot; partName=&quot;ModbusSerial.h&quot; title=&quot;ModbusSerial.h&quot; tooltip=&quot;C:\Users\admin\Documents\Energia\libraries\ModbusSerial\ModbusSerial.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.cdt.ui.ExternalEditorInputFactory&quot; path=&quot;C:\Users\admin\Documents\Energia\libraries\ModbusSerial\ModbusSerial.h&quot; project=&quot;ModBus_Serial_Slave&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;723&quot; selectionTopPixel=&quot;375&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -452,7 +458,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_TJRIcKuAEeiJ3v27JwTMAQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_vOtmcK3AEei4AMaRL0Xw1Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Swp0U6uAEeiJ3v27JwTMAQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5DqDMK_tEeihvcKSWvpPGg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Swp0U6uAEeiJ3v27JwTMAQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_TJRvgKuAEeiJ3v27JwTMAQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -485,7 +491,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_TJRvhKuAEeiJ3v27JwTMAQ" elementId="org.eclipse.ui.workbench.navigate" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_vOvboq3AEei4AMaRL0Xw1Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_SwomRquAEeiJ3v27JwTMAQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5DsfcK_tEeihvcKSWvpPGg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_SwomRquAEeiJ3v27JwTMAQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_TJRvhauAEeiJ3v27JwTMAQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
