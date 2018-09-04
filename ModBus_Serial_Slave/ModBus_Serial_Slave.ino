@@ -43,8 +43,8 @@ unsigned long inc_time = 0;
 //HOLDING REGISTER ADDRESSES
 #define VLC_START_H 1000
 #define BRIGHTNESS_H 2000
-#define CHIP_TEMP_ADC_H 3001
-#define CHIP_TEMP_H 3000
+#define CHIP_TEMP_ADC_H 3000
+#define CHIP_TEMP_H 3001
 
 #define LAMP_ON_H 4000
 #define VLC_ON_H 4001               //Enable to start VLC
