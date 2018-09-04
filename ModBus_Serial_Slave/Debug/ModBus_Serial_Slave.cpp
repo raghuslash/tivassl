@@ -61,6 +61,8 @@ unsigned long inc_time = 0;
 #define LAMP_ON_H 4000
 #define VLC_ON_H 4001               
 
+#define SLAVE_ADDR_REF 9999
+
 
 bool sendVLC = false;               
 bool lampON = true;                 
@@ -130,6 +132,7 @@ void setup()
 
     modbus.addHreg(VLC_ON_H, sendVLC);      
     modbus.addHreg(LAMP_ON_H, lampON);
+    modbus.addHreg(SLAVE_ADDR_REF, ID);
 
     for (int i = VLC_STR_LEN; i < (VLC_STR_LEN + VLC_START_H); i++)
         modbus.addHreg(i, '\0');
@@ -145,7 +148,7 @@ void setup()
     setup_gpio();
     delay(1);
     startup_blink();
-    led_brightness(50); 
+    led_brightness(100); 
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);            
     digitalWrite(VLC_MODULATION_PIN, LOW);
@@ -192,7 +195,15 @@ void loop()
         else
             lampON = false;
 
-        
+
+
+
+
+
+
+
+
+                
         int b = modbus.Hreg(BRIGHTNESS_H);
         if (lampON)
             led_brightness(b);
@@ -305,16 +316,31 @@ void startup_blink()
     pinMode(BLUE_LED,  OUTPUT);
     digitalWrite(BLUE_LED, HIGH);
     led_brightness(10);
-    delay(1000);
+    delay(500);
     digitalWrite(BLUE_LED, LOW);
     led_brightness(20);
-    delay(1000);
+    delay(500);
     digitalWrite(BLUE_LED, HIGH);
     led_brightness(30);
-    delay(1000);
+    delay(500);
     digitalWrite(BLUE_LED, LOW);
     led_brightness(40);
-    delay(1000);
+    delay(500);
+    digitalWrite(BLUE_LED, HIGH);
+    led_brightness(50);
+    delay(500);
+    digitalWrite(BLUE_LED, LOW);
+    led_brightness(60);
+    delay(500);
+    led_brightness(70);
+    delay(500);
+    led_brightness(80);
+    delay(500);
+    led_brightness(90);
+    delay(500);
+    led_brightness(100);
+    delay(500);
+
 
 }
 

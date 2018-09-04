@@ -136,7 +136,7 @@ void setup()
     setup_gpio();
     delay(1);
     startup_blink();
-    led_brightness(50); //SET to 50% on startup
+    led_brightness(100); //SET to 100% on startup
 
     pinMode(VLC_MODULATION_PIN, OUTPUT);            //Disable Modulation on Startup
     digitalWrite(VLC_MODULATION_PIN, LOW);
