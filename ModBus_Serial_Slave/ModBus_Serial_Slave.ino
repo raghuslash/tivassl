@@ -187,8 +187,8 @@ void loop()
 
 
 
-        newid=modbus.Hreg(SLAVE_ADDR_REF)       //UPDATE ID Change
-        modbus.setSlaveId(newid);
+//        int newid=modbus.Hreg(SLAVE_ADDR_REF)       //UPDATE ID Change
+//        modbus.setSlaveId(newid);
 
 
                 //UPDATE BRIGHTNESS OF LAMP
