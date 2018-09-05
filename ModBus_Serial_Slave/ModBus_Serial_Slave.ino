@@ -31,7 +31,8 @@ unsigned long inc_time = 0;
 #define LAMP_BR_ADDR1 0x15
 
 //INPUT REGISTER ADDRESSES
-#define TEMP_IP 3000
+#define TEMP_IP_ADC 3000
+#define TEMP_IP 3100
 #define TEMP_PIN A6 // connected to PD1 - A6
 #define VOLTAGE_IP 3001
 #define VOLTAGE_PIN A1 //connected to PE2 - A1
@@ -108,6 +109,7 @@ void setup()
     //    modbus.addHreg(i, i)
 
     //CREATE INPUT REGISTERS
+    modbus.addIreg(TEMP_IP_ADC, 0);
     modbus.addIreg(TEMP_IP, 0);
     modbus.addIreg(VOLTAGE_IP, 0);
     modbus.addIreg(CURRENT_IP, 0);
@@ -244,7 +246,10 @@ void loop()
     {
         update_time = millis();
         modbus.Ireg(LDR_IP, analogRead(LDR_PIN));
-        modbus.Ireg(TEMP_IP, analogRead(TEMP_PIN));
+        modbus.Ireg(TEMP_IP_ADC, analogRead(TEMP_PIN));
+        adc_temp=analogRead(TEMP_PIN);
+        adc_temp=adc_temp*0.01831;
+        modbus.Ireg(TEMP_IP, adc_temp);
         modbus.Ireg(VOLTAGE_IP, analogRead(VOLTAGE_PIN));
         modbus.Ireg(CURRENT_IP, analogRead(CURRENT_PIN));
         adc_temp=analogRead(TEMPSENSOR);
